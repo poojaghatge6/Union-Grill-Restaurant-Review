@@ -1,4 +1,8 @@
-# Union-Grill-Resturant-Review
+# Union-Grill-Restaurant-Review
+
+Built a query system that could extract opinions regarding a particular food item and service from the review data available which lead to gain valuable insights about the business
+
+Technology Stack: Java, Maven, Eclipse, word2vec, StanfordCoreNLP
 
 Output:
 ```
