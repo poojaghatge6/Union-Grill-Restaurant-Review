@@ -1,0 +1,289 @@
+
+Sentence #1 (12 tokens, sentiment: Positive):
+The service is generally good and the ambience is really pleasant.
+
+Tokens:
+[Text=The CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=DT Lemma=the NamedEntityTag=O SentimentClass=Neutral]
+[Text=service CharacterOffsetBegin=4 CharacterOffsetEnd=11 PartOfSpeech=NN Lemma=service NamedEntityTag=O SentimentClass=Neutral]
+[Text=is CharacterOffsetBegin=12 CharacterOffsetEnd=14 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O SentimentClass=Neutral]
+[Text=generally CharacterOffsetBegin=15 CharacterOffsetEnd=24 PartOfSpeech=RB Lemma=generally NamedEntityTag=O SentimentClass=Neutral]
+[Text=good CharacterOffsetBegin=25 CharacterOffsetEnd=29 PartOfSpeech=JJ Lemma=good NamedEntityTag=O SentimentClass=Positive]
+[Text=and CharacterOffsetBegin=30 CharacterOffsetEnd=33 PartOfSpeech=CC Lemma=and NamedEntityTag=O SentimentClass=Neutral]
+[Text=the CharacterOffsetBegin=34 CharacterOffsetEnd=37 PartOfSpeech=DT Lemma=the NamedEntityTag=O SentimentClass=Neutral]
+[Text=ambience CharacterOffsetBegin=38 CharacterOffsetEnd=46 PartOfSpeech=NN Lemma=ambience NamedEntityTag=O SentimentClass=Neutral]
+[Text=is CharacterOffsetBegin=47 CharacterOffsetEnd=49 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O SentimentClass=Neutral]
+[Text=really CharacterOffsetBegin=50 CharacterOffsetEnd=56 PartOfSpeech=RB Lemma=really NamedEntityTag=O SentimentClass=Neutral]
+[Text=pleasant CharacterOffsetBegin=57 CharacterOffsetEnd=65 PartOfSpeech=JJ Lemma=pleasant NamedEntityTag=O SentimentClass=Very positive]
+[Text=. CharacterOffsetBegin=65 CharacterOffsetEnd=66 PartOfSpeech=. Lemma=. NamedEntityTag=O SentimentClass=Neutral]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (DT The) (NN service))
+      (VP (VBZ is)
+        (ADJP (RB generally) (JJ good))))
+    (CC and)
+    (S
+      (NP (DT the) (NN ambience))
+      (VP (VBZ is)
+        (ADJP (RB really) (JJ pleasant))))
+    (. .)))
+
+
+Sentiment-annotated binary tree:
+(ROOT|sentiment=3|prob=0.536
+  (@S|sentiment=4|prob=0.495
+    (@S|sentiment=3|prob=0.868
+      (S|sentiment=3|prob=0.818
+        (NP|sentiment=2|prob=0.920 (DT|sentiment=2|prob=0.993 The) (NN|sentiment=2|prob=0.986 service))
+        (VP|sentiment=3|prob=0.801 (VBZ|sentiment=2|prob=0.989 is)
+          (ADJP|sentiment=3|prob=0.800 (RB|sentiment=2|prob=0.992 generally) (JJ|sentiment=3|prob=0.987 good))))
+      (CC|sentiment=2|prob=0.996 and))
+    (S|sentiment=3|prob=0.647
+      (NP|sentiment=2|prob=0.908 (DT|sentiment=2|prob=0.994 the) (NN|sentiment=2|prob=0.938 ambience))
+      (VP|sentiment=3|prob=0.565 (VBZ|sentiment=2|prob=0.989 is)
+        (ADJP|sentiment=3|prob=0.590 (RB|sentiment=2|prob=0.994 really) (JJ|sentiment=4|prob=0.819 pleasant)))))
+  (.|sentiment=2|prob=0.997 .))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, good-5)
+det(service-2, The-1)
+nsubj(good-5, service-2)
+cop(good-5, is-3)
+advmod(good-5, generally-4)
+cc(good-5, and-6)
+det(ambience-8, the-7)
+nsubj(pleasant-11, ambience-8)
+cop(pleasant-11, is-9)
+advmod(pleasant-11, really-10)
+conj:and(good-5, pleasant-11)
+punct(good-5, .-12)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (10 tokens, sentiment: Neutral):
+I usually see a lot of older Pittsburghers there.
+
+Tokens:
+[Text=I CharacterOffsetBegin=67 CharacterOffsetEnd=68 PartOfSpeech=PRP Lemma=I NamedEntityTag=O SentimentClass=Neutral]
+[Text=usually CharacterOffsetBegin=69 CharacterOffsetEnd=76 PartOfSpeech=RB Lemma=usually NamedEntityTag=O SentimentClass=Neutral]
+[Text=see CharacterOffsetBegin=77 CharacterOffsetEnd=80 PartOfSpeech=VBP Lemma=see NamedEntityTag=O SentimentClass=Neutral]
+[Text=a CharacterOffsetBegin=81 CharacterOffsetEnd=82 PartOfSpeech=DT Lemma=a NamedEntityTag=O SentimentClass=Neutral]
+[Text=lot CharacterOffsetBegin=83 CharacterOffsetEnd=86 PartOfSpeech=NN Lemma=lot NamedEntityTag=O SentimentClass=Neutral]
+[Text=of CharacterOffsetBegin=87 CharacterOffsetEnd=89 PartOfSpeech=IN Lemma=of NamedEntityTag=O SentimentClass=Neutral]
+[Text=older CharacterOffsetBegin=90 CharacterOffsetEnd=95 PartOfSpeech=JJR Lemma=older NamedEntityTag=O SentimentClass=Negative]
+[Text=Pittsburghers CharacterOffsetBegin=96 CharacterOffsetEnd=109 PartOfSpeech=NNS Lemma=pittsburgher NamedEntityTag=O SentimentClass=Neutral]
+[Text=there CharacterOffsetBegin=110 CharacterOffsetEnd=115 PartOfSpeech=RB Lemma=there NamedEntityTag=O SentimentClass=Neutral]
+[Text=. CharacterOffsetBegin=115 CharacterOffsetEnd=116 PartOfSpeech=. Lemma=. NamedEntityTag=O SentimentClass=Neutral]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (ADVP (RB usually))
+    (VP (VBP see)
+      (NP
+        (NP (DT a) (NN lot))
+        (PP (IN of)
+          (NP (JJR older) (NNS Pittsburghers))))
+      (ADVP (RB there)))
+    (. .)))
+
+
+Sentiment-annotated binary tree:
+(ROOT|sentiment=2|prob=0.436 (NP|sentiment=2|prob=0.996 I)
+  (@S|sentiment=2|prob=0.607 (ADVP|sentiment=2|prob=0.990 usually)
+    (@S|sentiment=3|prob=0.476
+      (VP|sentiment=2|prob=0.605
+        (@VP|sentiment=3|prob=0.527 (VBP|sentiment=2|prob=0.994 see)
+          (NP|sentiment=2|prob=0.707
+            (NP|sentiment=2|prob=0.993 (DT|sentiment=2|prob=0.990 a) (NN|sentiment=2|prob=0.997 lot))
+            (PP|sentiment=2|prob=0.938 (IN|sentiment=2|prob=0.993 of)
+              (NP|sentiment=2|prob=0.936 (JJR|sentiment=1|prob=0.929 older) (NNS|sentiment=2|prob=0.631 Pittsburghers)))))
+        (ADVP|sentiment=2|prob=0.996 there))
+      (.|sentiment=2|prob=0.997 .))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, see-3)
+nsubj(see-3, I-1)
+advmod(see-3, usually-2)
+det:qmod(Pittsburghers-8, a-4)
+mwe(a-4, lot-5)
+mwe(a-4, of-6)
+amod(Pittsburghers-8, older-7)
+dobj(see-3, Pittsburghers-8)
+advmod(see-3, there-9)
+punct(see-3, .-10)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (16 tokens, sentiment: Neutral):
+They have TV's there which is usually tuned to any game that is airing.
+
+Tokens:
+[Text=They CharacterOffsetBegin=117 CharacterOffsetEnd=121 PartOfSpeech=PRP Lemma=they NamedEntityTag=O SentimentClass=Neutral]
+[Text=have CharacterOffsetBegin=122 CharacterOffsetEnd=126 PartOfSpeech=VBP Lemma=have NamedEntityTag=O SentimentClass=Neutral]
+[Text=TV CharacterOffsetBegin=127 CharacterOffsetEnd=129 PartOfSpeech=NN Lemma=tv NamedEntityTag=O SentimentClass=Positive]
+[Text='s CharacterOffsetBegin=129 CharacterOffsetEnd=131 PartOfSpeech=POS Lemma='s NamedEntityTag=O SentimentClass=Neutral]
+[Text=there CharacterOffsetBegin=132 CharacterOffsetEnd=137 PartOfSpeech=EX Lemma=there NamedEntityTag=O SentimentClass=Neutral]
+[Text=which CharacterOffsetBegin=138 CharacterOffsetEnd=143 PartOfSpeech=WDT Lemma=which NamedEntityTag=O SentimentClass=Neutral]
+[Text=is CharacterOffsetBegin=144 CharacterOffsetEnd=146 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O SentimentClass=Neutral]
+[Text=usually CharacterOffsetBegin=147 CharacterOffsetEnd=154 PartOfSpeech=RB Lemma=usually NamedEntityTag=O SentimentClass=Neutral]
+[Text=tuned CharacterOffsetBegin=155 CharacterOffsetEnd=160 PartOfSpeech=VBN Lemma=tune NamedEntityTag=O SentimentClass=Neutral]
+[Text=to CharacterOffsetBegin=161 CharacterOffsetEnd=163 PartOfSpeech=TO Lemma=to NamedEntityTag=O SentimentClass=Neutral]
+[Text=any CharacterOffsetBegin=164 CharacterOffsetEnd=167 PartOfSpeech=DT Lemma=any NamedEntityTag=O SentimentClass=Neutral]
+[Text=game CharacterOffsetBegin=168 CharacterOffsetEnd=172 PartOfSpeech=NN Lemma=game NamedEntityTag=O SentimentClass=Neutral]
+[Text=that CharacterOffsetBegin=173 CharacterOffsetEnd=177 PartOfSpeech=WDT Lemma=that NamedEntityTag=O SentimentClass=Neutral]
+[Text=is CharacterOffsetBegin=178 CharacterOffsetEnd=180 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O SentimentClass=Neutral]
+[Text=airing CharacterOffsetBegin=181 CharacterOffsetEnd=187 PartOfSpeech=VBG Lemma=air NamedEntityTag=O SentimentClass=Neutral]
+[Text=. CharacterOffsetBegin=187 CharacterOffsetEnd=188 PartOfSpeech=. Lemma=. NamedEntityTag=O SentimentClass=Neutral]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBP have)
+      (NP
+        (NP
+          (NP (NN TV) (POS 's))
+          (NP (EX there)))
+        (SBAR
+          (WHNP (WDT which))
+          (S
+            (VP (VBZ is)
+              (ADVP (RB usually))
+              (ADJP (VBN tuned)
+                (PP (TO to)
+                  (NP
+                    (NP (DT any) (NN game))
+                    (SBAR
+                      (WHNP (WDT that))
+                      (S
+                        (VP (VBZ is)
+                          (VP (VBG airing)))))))))))))
+    (. .)))
+
+
+Sentiment-annotated binary tree:
+(ROOT|sentiment=2|prob=0.581 (NP|sentiment=2|prob=0.993 They)
+  (@S|sentiment=2|prob=0.579
+    (VP|sentiment=2|prob=0.671 (VBP|sentiment=2|prob=0.991 have)
+      (NP|sentiment=2|prob=0.664
+        (NP|sentiment=2|prob=0.990
+          (NP|sentiment=2|prob=0.986 (NN|sentiment=3|prob=0.920 TV) (POS|sentiment=2|prob=0.994 's))
+          (NP|sentiment=2|prob=0.996 there))
+        (SBAR|sentiment=2|prob=0.580 (WHNP|sentiment=2|prob=0.991 which)
+          (S|sentiment=2|prob=0.478
+            (@VP|sentiment=2|prob=0.738 (VBZ|sentiment=2|prob=0.989 is) (ADVP|sentiment=2|prob=0.990 usually))
+            (ADJP|sentiment=3|prob=0.436 (VBN|sentiment=2|prob=0.970 tuned)
+              (PP|sentiment=2|prob=0.740 (TO|sentiment=2|prob=0.990 to)
+                (NP|sentiment=2|prob=0.679
+                  (NP|sentiment=2|prob=0.996 (DT|sentiment=2|prob=0.995 any) (NN|sentiment=2|prob=0.997 game))
+                  (SBAR|sentiment=2|prob=0.619 (WHNP|sentiment=2|prob=0.991 that)
+                    (S|sentiment=2|prob=0.632 (VBZ|sentiment=2|prob=0.989 is) (VP|sentiment=2|prob=0.631 airing))))))))))
+    (.|sentiment=2|prob=0.997 .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, have-2)
+nsubj(have-2, They-1)
+dobj(have-2, TV-3)
+nsubjpass(tuned-9, TV-3)
+case(TV-3, 's-4)
+dep(TV-3, there-5)
+ref(TV-3, which-6)
+auxpass(tuned-9, is-7)
+advmod(tuned-9, usually-8)
+acl:relcl(TV-3, tuned-9)
+case(game-12, to-10)
+det(game-12, any-11)
+nmod:to(tuned-9, game-12)
+nsubj(airing-15, game-12)
+ref(game-12, that-13)
+aux(airing-15, is-14)
+acl:relcl(game-12, airing-15)
+punct(have-2, .-16)
+
+Extracted the following NER entity mentions:
+
+Sentence #4 (14 tokens, sentiment: Neutral):
+It looks a lot more expensive from the outside than it actually is.
+
+Tokens:
+[Text=It CharacterOffsetBegin=189 CharacterOffsetEnd=191 PartOfSpeech=PRP Lemma=it NamedEntityTag=O SentimentClass=Neutral]
+[Text=looks CharacterOffsetBegin=192 CharacterOffsetEnd=197 PartOfSpeech=VBZ Lemma=look NamedEntityTag=O SentimentClass=Neutral]
+[Text=a CharacterOffsetBegin=198 CharacterOffsetEnd=199 PartOfSpeech=DT Lemma=a NamedEntityTag=O SentimentClass=Neutral]
+[Text=lot CharacterOffsetBegin=200 CharacterOffsetEnd=203 PartOfSpeech=NN Lemma=lot NamedEntityTag=O SentimentClass=Neutral]
+[Text=more CharacterOffsetBegin=204 CharacterOffsetEnd=208 PartOfSpeech=RBR Lemma=more NamedEntityTag=O SentimentClass=Neutral]
+[Text=expensive CharacterOffsetBegin=209 CharacterOffsetEnd=218 PartOfSpeech=JJ Lemma=expensive NamedEntityTag=O SentimentClass=Neutral]
+[Text=from CharacterOffsetBegin=219 CharacterOffsetEnd=223 PartOfSpeech=IN Lemma=from NamedEntityTag=O SentimentClass=Neutral]
+[Text=the CharacterOffsetBegin=224 CharacterOffsetEnd=227 PartOfSpeech=DT Lemma=the NamedEntityTag=O SentimentClass=Neutral]
+[Text=outside CharacterOffsetBegin=228 CharacterOffsetEnd=235 PartOfSpeech=JJ Lemma=outside NamedEntityTag=O SentimentClass=Neutral]
+[Text=than CharacterOffsetBegin=236 CharacterOffsetEnd=240 PartOfSpeech=IN Lemma=than NamedEntityTag=O SentimentClass=Neutral]
+[Text=it CharacterOffsetBegin=241 CharacterOffsetEnd=243 PartOfSpeech=PRP Lemma=it NamedEntityTag=O SentimentClass=Neutral]
+[Text=actually CharacterOffsetBegin=244 CharacterOffsetEnd=252 PartOfSpeech=RB Lemma=actually NamedEntityTag=O SentimentClass=Neutral]
+[Text=is CharacterOffsetBegin=253 CharacterOffsetEnd=255 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O SentimentClass=Neutral]
+[Text=. CharacterOffsetBegin=255 CharacterOffsetEnd=256 PartOfSpeech=. Lemma=. NamedEntityTag=O SentimentClass=Neutral]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ looks)
+      (S
+        (NP (DT a) (NN lot))
+        (ADJP (RBR more) (JJ expensive)
+          (PP (IN from)
+            (NP (DT the) (JJ outside)))))
+      (SBAR (IN than)
+        (S
+          (NP (PRP it))
+          (ADVP (RB actually))
+          (VP (VBZ is)))))
+    (. .)))
+
+
+Sentiment-annotated binary tree:
+(ROOT|sentiment=2|prob=0.381 (NP|sentiment=2|prob=0.996 It)
+  (@S|sentiment=3|prob=0.363
+    (VP|sentiment=3|prob=0.402
+      (@VP|sentiment=2|prob=0.739 (VBZ|sentiment=2|prob=0.996 looks)
+        (S|sentiment=2|prob=0.559
+          (NP|sentiment=2|prob=0.993 (DT|sentiment=2|prob=0.990 a) (NN|sentiment=2|prob=0.997 lot))
+          (ADJP|sentiment=2|prob=0.847 (RBR|sentiment=2|prob=0.992 more)
+            (@ADJP|sentiment=2|prob=0.951 (JJ|sentiment=2|prob=0.911 expensive)
+              (PP|sentiment=2|prob=0.964 (IN|sentiment=2|prob=0.994 from)
+                (NP|sentiment=2|prob=0.971 (DT|sentiment=2|prob=0.994 the) (JJ|sentiment=2|prob=0.977 outside)))))))
+      (SBAR|sentiment=2|prob=0.766 (IN|sentiment=2|prob=0.998 than)
+        (S|sentiment=3|prob=0.509 (NP|sentiment=2|prob=0.993 it)
+          (@S|sentiment=2|prob=0.608 (ADVP|sentiment=2|prob=0.996 actually) (VP|sentiment=2|prob=0.989 is)))))
+    (.|sentiment=2|prob=0.997 .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, looks-2)
+nsubj(looks-2, It-1)
+det(lot-4, a-3)
+nsubj(expensive-6, lot-4)
+advmod(expensive-6, more-5)
+xcomp(looks-2, expensive-6)
+case(outside-9, from-7)
+det(outside-9, the-8)
+nmod:from(expensive-6, outside-9)
+mark(is-13, than-10)
+nsubj(is-13, it-11)
+advmod(is-13, actually-12)
+advcl:than(looks-2, is-13)
+punct(looks-2, .-14)
+
+Extracted the following NER entity mentions:
+
+Coreference set:
+	(3,1,[1,2]) -> (2,8,[7,9]), that is: "They" -> "older Pittsburghers"
+
+Coreference set:
+	(4,1,[1,2]) -> (3,3,[3,16]), that is: "It" -> "TV 's there which is usually tuned to any game that is airing"
+	(4,11,[11,12]) -> (3,3,[3,16]), that is: "it" -> "TV 's there which is usually tuned to any game that is airing"

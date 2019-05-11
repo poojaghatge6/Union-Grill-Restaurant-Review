@@ -1,0 +1,267 @@
+
+Sentence #1 (12 tokens, sentiment: Positive):
+Our waiter Drew was incredibly kind for a rather large group.
+
+Tokens:
+[Text=Our CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O SentimentClass=Neutral]
+[Text=waiter CharacterOffsetBegin=4 CharacterOffsetEnd=10 PartOfSpeech=NN Lemma=waiter NamedEntityTag=TITLE SentimentClass=Neutral]
+[Text=Drew CharacterOffsetBegin=11 CharacterOffsetEnd=15 PartOfSpeech=NNP Lemma=Drew NamedEntityTag=PERSON SentimentClass=Neutral]
+[Text=was CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=VBD Lemma=be NamedEntityTag=O SentimentClass=Neutral]
+[Text=incredibly CharacterOffsetBegin=20 CharacterOffsetEnd=30 PartOfSpeech=RB Lemma=incredibly NamedEntityTag=O SentimentClass=Positive]
+[Text=kind CharacterOffsetBegin=31 CharacterOffsetEnd=35 PartOfSpeech=NN Lemma=kind NamedEntityTag=O SentimentClass=Positive]
+[Text=for CharacterOffsetBegin=36 CharacterOffsetEnd=39 PartOfSpeech=IN Lemma=for NamedEntityTag=O SentimentClass=Neutral]
+[Text=a CharacterOffsetBegin=40 CharacterOffsetEnd=41 PartOfSpeech=DT Lemma=a NamedEntityTag=O SentimentClass=Neutral]
+[Text=rather CharacterOffsetBegin=42 CharacterOffsetEnd=48 PartOfSpeech=RB Lemma=rather NamedEntityTag=O SentimentClass=Neutral]
+[Text=large CharacterOffsetBegin=49 CharacterOffsetEnd=54 PartOfSpeech=JJ Lemma=large NamedEntityTag=O SentimentClass=Neutral]
+[Text=group CharacterOffsetBegin=55 CharacterOffsetEnd=60 PartOfSpeech=NN Lemma=group NamedEntityTag=O SentimentClass=Neutral]
+[Text=. CharacterOffsetBegin=60 CharacterOffsetEnd=61 PartOfSpeech=. Lemma=. NamedEntityTag=O SentimentClass=Neutral]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP$ Our) (NN waiter) (NNP Drew))
+    (VP (VBD was)
+      (ADJP (RB incredibly) (NN kind))
+      (PP (IN for)
+        (NP (DT a)
+          (ADJP (RB rather) (JJ large))
+          (NN group))))
+    (. .)))
+
+
+Sentiment-annotated binary tree:
+(ROOT|sentiment=3|prob=0.445
+  (NP|sentiment=2|prob=0.839 (PRP$|sentiment=2|prob=0.951 Our)
+    (@NP|sentiment=2|prob=0.825 (NN|sentiment=2|prob=0.631 waiter) (NNP|sentiment=2|prob=0.973 Drew)))
+  (@S|sentiment=3|prob=0.524
+    (VP|sentiment=3|prob=0.490
+      (@VP|sentiment=3|prob=0.493 (VBD|sentiment=2|prob=0.996 was)
+        (ADJP|sentiment=3|prob=0.553 (RB|sentiment=3|prob=0.878 incredibly) (NN|sentiment=3|prob=0.983 kind)))
+      (PP|sentiment=2|prob=0.941 (IN|sentiment=2|prob=0.992 for)
+        (NP|sentiment=2|prob=0.946 (DT|sentiment=2|prob=0.990 a)
+          (@NP|sentiment=2|prob=0.967
+            (ADJP|sentiment=2|prob=0.944 (RB|sentiment=2|prob=0.997 rather) (JJ|sentiment=2|prob=0.987 large))
+            (NN|sentiment=2|prob=0.994 group)))))
+    (.|sentiment=2|prob=0.997 .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, kind-6)
+nmod:poss(Drew-3, Our-1)
+compound(Drew-3, waiter-2)
+nsubj(kind-6, Drew-3)
+cop(kind-6, was-4)
+advmod(kind-6, incredibly-5)
+case(group-11, for-7)
+det(group-11, a-8)
+advmod(large-10, rather-9)
+amod(group-11, large-10)
+nmod:for(kind-6, group-11)
+punct(kind-6, .-12)
+
+Extracted the following NER entity mentions:
+waiter	TITLE
+Drew	PERSON
+
+Sentence #2 (30 tokens, sentiment: Negative):
+The food was incredibly satisfying and didn't strike me as typical "American" food in the bad way (ie not greasy)- it was WONDERFUL!
+
+Tokens:
+[Text=The CharacterOffsetBegin=62 CharacterOffsetEnd=65 PartOfSpeech=DT Lemma=the NamedEntityTag=O SentimentClass=Neutral]
+[Text=food CharacterOffsetBegin=66 CharacterOffsetEnd=70 PartOfSpeech=NN Lemma=food NamedEntityTag=O SentimentClass=Neutral]
+[Text=was CharacterOffsetBegin=71 CharacterOffsetEnd=74 PartOfSpeech=VBD Lemma=be NamedEntityTag=O SentimentClass=Neutral]
+[Text=incredibly CharacterOffsetBegin=75 CharacterOffsetEnd=85 PartOfSpeech=RB Lemma=incredibly NamedEntityTag=O SentimentClass=Positive]
+[Text=satisfying CharacterOffsetBegin=86 CharacterOffsetEnd=96 PartOfSpeech=JJ Lemma=satisfying NamedEntityTag=O SentimentClass=Very positive]
+[Text=and CharacterOffsetBegin=97 CharacterOffsetEnd=100 PartOfSpeech=CC Lemma=and NamedEntityTag=O SentimentClass=Neutral]
+[Text=did CharacterOffsetBegin=101 CharacterOffsetEnd=104 PartOfSpeech=VBD Lemma=do NamedEntityTag=O SentimentClass=Neutral]
+[Text=n't CharacterOffsetBegin=104 CharacterOffsetEnd=107 PartOfSpeech=RB Lemma=not NamedEntityTag=O SentimentClass=Neutral]
+[Text=strike CharacterOffsetBegin=108 CharacterOffsetEnd=114 PartOfSpeech=VB Lemma=strike NamedEntityTag=O SentimentClass=Neutral]
+[Text=me CharacterOffsetBegin=115 CharacterOffsetEnd=117 PartOfSpeech=PRP Lemma=I NamedEntityTag=O SentimentClass=Positive]
+[Text=as CharacterOffsetBegin=118 CharacterOffsetEnd=120 PartOfSpeech=IN Lemma=as NamedEntityTag=O SentimentClass=Neutral]
+[Text=typical CharacterOffsetBegin=121 CharacterOffsetEnd=128 PartOfSpeech=JJ Lemma=typical NamedEntityTag=O SentimentClass=Negative]
+[Text=`` CharacterOffsetBegin=129 CharacterOffsetEnd=130 PartOfSpeech=`` Lemma=`` NamedEntityTag=O SentimentClass=Neutral]
+[Text=American CharacterOffsetBegin=130 CharacterOffsetEnd=138 PartOfSpeech=JJ Lemma=american NamedEntityTag=NATIONALITY SentimentClass=Neutral]
+[Text='' CharacterOffsetBegin=138 CharacterOffsetEnd=139 PartOfSpeech='' Lemma='' NamedEntityTag=O SentimentClass=Neutral]
+[Text=food CharacterOffsetBegin=140 CharacterOffsetEnd=144 PartOfSpeech=NN Lemma=food NamedEntityTag=O SentimentClass=Neutral]
+[Text=in CharacterOffsetBegin=145 CharacterOffsetEnd=147 PartOfSpeech=IN Lemma=in NamedEntityTag=O SentimentClass=Neutral]
+[Text=the CharacterOffsetBegin=148 CharacterOffsetEnd=151 PartOfSpeech=DT Lemma=the NamedEntityTag=O SentimentClass=Neutral]
+[Text=bad CharacterOffsetBegin=152 CharacterOffsetEnd=155 PartOfSpeech=JJ Lemma=bad NamedEntityTag=O SentimentClass=Very negative]
+[Text=way CharacterOffsetBegin=156 CharacterOffsetEnd=159 PartOfSpeech=NN Lemma=way NamedEntityTag=O SentimentClass=Neutral]
+[Text=-LRB- CharacterOffsetBegin=160 CharacterOffsetEnd=161 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O SentimentClass=Neutral]
+[Text=ie CharacterOffsetBegin=161 CharacterOffsetEnd=163 PartOfSpeech=FW Lemma=ie NamedEntityTag=O SentimentClass=Neutral]
+[Text=not CharacterOffsetBegin=164 CharacterOffsetEnd=167 PartOfSpeech=RB Lemma=not NamedEntityTag=O SentimentClass=Negative]
+[Text=greasy CharacterOffsetBegin=168 CharacterOffsetEnd=174 PartOfSpeech=JJ Lemma=greasy NamedEntityTag=O SentimentClass=Neutral]
+[Text=-RRB- CharacterOffsetBegin=174 CharacterOffsetEnd=175 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O SentimentClass=Neutral]
+[Text=- CharacterOffsetBegin=175 CharacterOffsetEnd=176 PartOfSpeech=: Lemma=- NamedEntityTag=O SentimentClass=Neutral]
+[Text=it CharacterOffsetBegin=177 CharacterOffsetEnd=179 PartOfSpeech=PRP Lemma=it NamedEntityTag=O SentimentClass=Neutral]
+[Text=was CharacterOffsetBegin=180 CharacterOffsetEnd=183 PartOfSpeech=VBD Lemma=be NamedEntityTag=O SentimentClass=Neutral]
+[Text=WONDERFUL CharacterOffsetBegin=184 CharacterOffsetEnd=193 PartOfSpeech=NNP Lemma=WONDERFUL NamedEntityTag=O SentimentClass=Neutral]
+[Text=! CharacterOffsetBegin=193 CharacterOffsetEnd=194 PartOfSpeech=. Lemma=! NamedEntityTag=O SentimentClass=Neutral]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (DT The) (NN food))
+      (VP
+        (VP (VBD was)
+          (ADJP (RB incredibly) (JJ satisfying)))
+        (CC and)
+        (VP (VBD did) (RB n't)
+          (VP (VB strike)
+            (NP (PRP me))
+            (PP (IN as)
+              (ADJP (JJ typical)))))
+        (NP
+          (NP (`` ``) (JJ American) ('' '') (NN food))
+          (PP (IN in)
+            (NP
+              (NP (DT the) (JJ bad) (NN way))
+              (PRN (-LRB- -LRB-)
+                (S
+                  (NP (FW ie))
+                  (ADJP (RB not) (JJ greasy)))
+                (-RRB- -RRB-)))))))
+    (: -)
+    (S
+      (NP (PRP it))
+      (VP (VBD was)
+        (NP (NNP WONDERFUL))))
+    (. !)))
+
+
+Sentiment-annotated binary tree:
+(ROOT|sentiment=1|prob=0.312
+  (@S|sentiment=2|prob=0.396
+    (@S|sentiment=2|prob=0.595
+      (S|sentiment=2|prob=0.383
+        (NP|sentiment=2|prob=0.986 (DT|sentiment=2|prob=0.993 The) (NN|sentiment=2|prob=0.993 food))
+        (VP|sentiment=1|prob=0.356
+          (@VP|sentiment=3|prob=0.562
+            (@VP|sentiment=3|prob=0.753
+              (VP|sentiment=3|prob=0.534 (VBD|sentiment=2|prob=0.996 was)
+                (ADJP|sentiment=3|prob=0.498 (RB|sentiment=3|prob=0.878 incredibly) (JJ|sentiment=4|prob=0.852 satisfying)))
+              (CC|sentiment=2|prob=0.996 and))
+            (VP|sentiment=1|prob=0.529
+              (@VP|sentiment=2|prob=0.927 (VBD|sentiment=2|prob=0.996 did) (RB|sentiment=2|prob=0.994 n't))
+              (VP|sentiment=1|prob=0.693
+                (@VP|sentiment=2|prob=0.738 (VB|sentiment=2|prob=0.974 strike) (NP|sentiment=3|prob=0.946 me))
+                (PP|sentiment=2|prob=0.615 (IN|sentiment=2|prob=0.990 as) (ADJP|sentiment=1|prob=0.840 typical)))))
+          (NP|sentiment=1|prob=0.550
+            (NP|sentiment=2|prob=0.710 (``|sentiment=2|prob=0.997 ``)
+              (@NP|sentiment=2|prob=0.935 (JJ|sentiment=2|prob=0.996 American)
+                (@NP|sentiment=2|prob=0.955 (''|sentiment=2|prob=0.997 '') (NN|sentiment=2|prob=0.993 food))))
+            (PP|sentiment=1|prob=0.566 (IN|sentiment=2|prob=0.993 in)
+              (NP|sentiment=1|prob=0.486
+                (NP|sentiment=1|prob=0.637 (DT|sentiment=2|prob=0.994 the)
+                  (@NP|sentiment=1|prob=0.540 (JJ|sentiment=0|prob=0.806 bad) (NN|sentiment=2|prob=0.994 way)))
+                (PRN|sentiment=2|prob=0.529 (-LRB-|sentiment=2|prob=0.634 -LRB-)
+                  (@PRN|sentiment=2|prob=0.656
+                    (S|sentiment=2|prob=0.611 (NP|sentiment=2|prob=0.631 ie)
+                      (ADJP|sentiment=2|prob=0.729 (RB|sentiment=1|prob=0.974 not) (JJ|sentiment=2|prob=0.856 greasy)))
+                    (-RRB-|sentiment=2|prob=0.720 -RRB-))))))))
+      (:|sentiment=2|prob=0.996 -))
+    (S|sentiment=2|prob=0.660 (NP|sentiment=2|prob=0.993 it)
+      (VP|sentiment=2|prob=0.759 (VBD|sentiment=2|prob=0.996 was) (NP|sentiment=2|prob=0.631 WONDERFUL))))
+  (.|sentiment=2|prob=0.999 !))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, satisfying-5)
+det(food-2, The-1)
+nsubj(satisfying-5, food-2)
+nsubj(strike-9, food-2)
+cop(satisfying-5, was-3)
+advmod(satisfying-5, incredibly-4)
+cc(satisfying-5, and-6)
+aux(strike-9, did-7)
+neg(strike-9, n't-8)
+conj:and(satisfying-5, strike-9)
+dobj(strike-9, me-10)
+case(typical-12, as-11)
+advcl:as(strike-9, typical-12)
+punct(food-16, ``-13)
+amod(food-16, American-14)
+punct(food-16, ''-15)
+dobj(satisfying-5, food-16)
+case(way-20, in-17)
+det(way-20, the-18)
+amod(way-20, bad-19)
+nmod:in(food-16, way-20)
+punct(greasy-24, -LRB--21)
+dep(greasy-24, ie-22)
+neg(greasy-24, not-23)
+dep(way-20, greasy-24)
+punct(greasy-24, -RRB--25)
+punct(satisfying-5, --26)
+nsubj(WONDERFUL-29, it-27)
+cop(WONDERFUL-29, was-28)
+parataxis(satisfying-5, WONDERFUL-29)
+punct(satisfying-5, !-30)
+
+Extracted the following NER entity mentions:
+American	NATIONALITY
+
+Sentence #3 (11 tokens, sentiment: Neutral):
+Vegan options are there if you take out the cheese!
+
+Tokens:
+[Text=Vegan CharacterOffsetBegin=195 CharacterOffsetEnd=200 PartOfSpeech=JJ Lemma=vegan NamedEntityTag=O SentimentClass=Neutral]
+[Text=options CharacterOffsetBegin=201 CharacterOffsetEnd=208 PartOfSpeech=NNS Lemma=option NamedEntityTag=O SentimentClass=Neutral]
+[Text=are CharacterOffsetBegin=209 CharacterOffsetEnd=212 PartOfSpeech=VBP Lemma=be NamedEntityTag=O SentimentClass=Neutral]
+[Text=there CharacterOffsetBegin=213 CharacterOffsetEnd=218 PartOfSpeech=EX Lemma=there NamedEntityTag=O SentimentClass=Neutral]
+[Text=if CharacterOffsetBegin=219 CharacterOffsetEnd=221 PartOfSpeech=IN Lemma=if NamedEntityTag=O SentimentClass=Neutral]
+[Text=you CharacterOffsetBegin=222 CharacterOffsetEnd=225 PartOfSpeech=PRP Lemma=you NamedEntityTag=O SentimentClass=Neutral]
+[Text=take CharacterOffsetBegin=226 CharacterOffsetEnd=230 PartOfSpeech=VBP Lemma=take NamedEntityTag=O SentimentClass=Neutral]
+[Text=out CharacterOffsetBegin=231 CharacterOffsetEnd=234 PartOfSpeech=RP Lemma=out NamedEntityTag=O SentimentClass=Negative]
+[Text=the CharacterOffsetBegin=235 CharacterOffsetEnd=238 PartOfSpeech=DT Lemma=the NamedEntityTag=O SentimentClass=Neutral]
+[Text=cheese CharacterOffsetBegin=239 CharacterOffsetEnd=245 PartOfSpeech=NN Lemma=cheese NamedEntityTag=O SentimentClass=Neutral]
+[Text=! CharacterOffsetBegin=245 CharacterOffsetEnd=246 PartOfSpeech=. Lemma=! NamedEntityTag=O SentimentClass=Neutral]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (JJ Vegan) (NNS options))
+    (VP (VBP are)
+      (NP (EX there))
+      (SBAR (IN if)
+        (S
+          (NP (PRP you))
+          (VP (VBP take)
+            (PRT (RP out))
+            (NP (DT the) (NN cheese))))))
+    (. !)))
+
+
+Sentiment-annotated binary tree:
+(ROOT|sentiment=2|prob=0.426
+  (NP|sentiment=2|prob=0.659 (JJ|sentiment=2|prob=0.631 Vegan) (NNS|sentiment=2|prob=0.914 options))
+  (@S|sentiment=2|prob=0.780
+    (VP|sentiment=2|prob=0.766
+      (@VP|sentiment=2|prob=0.934 (VBP|sentiment=2|prob=0.992 are) (NP|sentiment=2|prob=0.996 there))
+      (SBAR|sentiment=2|prob=0.833 (IN|sentiment=2|prob=0.986 if)
+        (S|sentiment=2|prob=0.801 (NP|sentiment=2|prob=0.995 you)
+          (VP|sentiment=2|prob=0.751
+            (@VP|sentiment=2|prob=0.947 (VBP|sentiment=2|prob=0.994 take) (PRT|sentiment=1|prob=0.945 out))
+            (NP|sentiment=2|prob=0.876 (DT|sentiment=2|prob=0.994 the) (NN|sentiment=2|prob=0.950 cheese))))))
+    (.|sentiment=2|prob=0.999 !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, there-4)
+amod(options-2, Vegan-1)
+nsubj(there-4, options-2)
+cop(there-4, are-3)
+mark(take-7, if-5)
+nsubj(take-7, you-6)
+advcl:if(there-4, take-7)
+compound:prt(take-7, out-8)
+det(cheese-10, the-9)
+dobj(take-7, cheese-10)
+punct(there-4, !-11)
+
+Extracted the following NER entity mentions:
+
+Coreference set:
+	(2,2,[1,3]) -> (2,29,[29,30]), that is: "The food" -> "WONDERFUL"
+	(2,27,[27,28]) -> (2,29,[29,30]), that is: "it" -> "WONDERFUL"

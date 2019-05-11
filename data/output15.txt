@@ -1,0 +1,488 @@
+
+Sentence #1 (23 tokens, sentiment: Positive):
+I got the fish taco which was pretty good but I would recommend splitting with another person since it's so big.
+
+Tokens:
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O SentimentClass=Neutral]
+[Text=got CharacterOffsetBegin=2 CharacterOffsetEnd=5 PartOfSpeech=VBD Lemma=get NamedEntityTag=O SentimentClass=Neutral]
+[Text=the CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=DT Lemma=the NamedEntityTag=O SentimentClass=Neutral]
+[Text=fish CharacterOffsetBegin=10 CharacterOffsetEnd=14 PartOfSpeech=NN Lemma=fish NamedEntityTag=O SentimentClass=Neutral]
+[Text=taco CharacterOffsetBegin=15 CharacterOffsetEnd=19 PartOfSpeech=NN Lemma=taco NamedEntityTag=O SentimentClass=Neutral]
+[Text=which CharacterOffsetBegin=20 CharacterOffsetEnd=25 PartOfSpeech=WDT Lemma=which NamedEntityTag=O SentimentClass=Neutral]
+[Text=was CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=VBD Lemma=be NamedEntityTag=O SentimentClass=Neutral]
+[Text=pretty CharacterOffsetBegin=30 CharacterOffsetEnd=36 PartOfSpeech=RB Lemma=pretty NamedEntityTag=O SentimentClass=Very positive]
+[Text=good CharacterOffsetBegin=37 CharacterOffsetEnd=41 PartOfSpeech=JJ Lemma=good NamedEntityTag=O SentimentClass=Positive]
+[Text=but CharacterOffsetBegin=42 CharacterOffsetEnd=45 PartOfSpeech=CC Lemma=but NamedEntityTag=O SentimentClass=Neutral]
+[Text=I CharacterOffsetBegin=46 CharacterOffsetEnd=47 PartOfSpeech=PRP Lemma=I NamedEntityTag=O SentimentClass=Neutral]
+[Text=would CharacterOffsetBegin=48 CharacterOffsetEnd=53 PartOfSpeech=MD Lemma=would NamedEntityTag=O SentimentClass=Neutral]
+[Text=recommend CharacterOffsetBegin=54 CharacterOffsetEnd=63 PartOfSpeech=VB Lemma=recommend NamedEntityTag=O SentimentClass=Positive]
+[Text=splitting CharacterOffsetBegin=64 CharacterOffsetEnd=73 PartOfSpeech=NN Lemma=splitting NamedEntityTag=O SentimentClass=Neutral]
+[Text=with CharacterOffsetBegin=74 CharacterOffsetEnd=78 PartOfSpeech=IN Lemma=with NamedEntityTag=O SentimentClass=Neutral]
+[Text=another CharacterOffsetBegin=79 CharacterOffsetEnd=86 PartOfSpeech=DT Lemma=another NamedEntityTag=O SentimentClass=Neutral]
+[Text=person CharacterOffsetBegin=87 CharacterOffsetEnd=93 PartOfSpeech=NN Lemma=person NamedEntityTag=O SentimentClass=Neutral]
+[Text=since CharacterOffsetBegin=94 CharacterOffsetEnd=99 PartOfSpeech=IN Lemma=since NamedEntityTag=O SentimentClass=Neutral]
+[Text=it CharacterOffsetBegin=100 CharacterOffsetEnd=102 PartOfSpeech=PRP Lemma=it NamedEntityTag=O SentimentClass=Neutral]
+[Text='s CharacterOffsetBegin=102 CharacterOffsetEnd=104 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O SentimentClass=Neutral]
+[Text=so CharacterOffsetBegin=105 CharacterOffsetEnd=107 PartOfSpeech=RB Lemma=so NamedEntityTag=O SentimentClass=Neutral]
+[Text=big CharacterOffsetBegin=108 CharacterOffsetEnd=111 PartOfSpeech=JJ Lemma=big NamedEntityTag=O SentimentClass=Neutral]
+[Text=. CharacterOffsetBegin=111 CharacterOffsetEnd=112 PartOfSpeech=. Lemma=. NamedEntityTag=O SentimentClass=Neutral]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBD got)
+        (NP
+          (NP (DT the) (NN fish) (NN taco))
+          (SBAR
+            (WHNP (WDT which))
+            (S
+              (VP (VBD was)
+                (ADJP (RB pretty) (JJ good))))))))
+    (CC but)
+    (S
+      (NP (PRP I))
+      (VP (MD would)
+        (VP (VB recommend)
+          (NP (NN splitting))
+          (PP (IN with)
+            (NP (DT another) (NN person)))
+          (SBAR (IN since)
+            (S
+              (NP (PRP it))
+              (VP (VBZ 's)
+                (ADJP (RB so) (JJ big))))))))
+    (. .)))
+
+
+Sentiment-annotated binary tree:
+(ROOT|sentiment=3|prob=0.518
+  (@S|sentiment=3|prob=0.477
+    (@S|sentiment=2|prob=0.342
+      (S|sentiment=3|prob=0.469 (NP|sentiment=2|prob=0.996 I)
+        (VP|sentiment=3|prob=0.533 (VBD|sentiment=2|prob=0.995 got)
+          (NP|sentiment=3|prob=0.353
+            (NP|sentiment=2|prob=0.885 (DT|sentiment=2|prob=0.994 the)
+              (@NP|sentiment=2|prob=0.869 (NN|sentiment=2|prob=0.993 fish) (NN|sentiment=2|prob=0.631 taco)))
+            (SBAR|sentiment=3|prob=0.507 (WHNP|sentiment=2|prob=0.991 which)
+              (S|sentiment=3|prob=0.553 (VBD|sentiment=2|prob=0.996 was)
+                (ADJP|sentiment=3|prob=0.778 (RB|sentiment=4|prob=0.763 pretty) (JJ|sentiment=3|prob=0.987 good)))))))
+      (CC|sentiment=2|prob=0.990 but))
+    (S|sentiment=3|prob=0.520 (NP|sentiment=2|prob=0.996 I)
+      (VP|sentiment=3|prob=0.530 (MD|sentiment=2|prob=0.997 would)
+        (VP|sentiment=3|prob=0.673
+          (@VP|sentiment=3|prob=0.604
+            (@VP|sentiment=3|prob=0.537 (VB|sentiment=3|prob=0.822 recommend) (NP|sentiment=2|prob=0.914 splitting))
+            (PP|sentiment=2|prob=0.871 (IN|sentiment=2|prob=0.992 with)
+              (NP|sentiment=2|prob=0.916 (DT|sentiment=2|prob=0.996 another) (NN|sentiment=2|prob=0.988 person))))
+          (SBAR|sentiment=2|prob=0.870 (IN|sentiment=2|prob=0.996 since)
+            (S|sentiment=2|prob=0.611 (NP|sentiment=2|prob=0.993 it)
+              (VP|sentiment=2|prob=0.971 (VBZ|sentiment=2|prob=0.994 's)
+                (ADJP|sentiment=2|prob=0.884 (RB|sentiment=2|prob=0.995 so) (JJ|sentiment=2|prob=0.995 big)))))))))
+  (.|sentiment=2|prob=0.997 .))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, got-2)
+nsubj(got-2, I-1)
+det(taco-5, the-3)
+compound(taco-5, fish-4)
+dobj(got-2, taco-5)
+nsubj(good-9, taco-5)
+ref(taco-5, which-6)
+cop(good-9, was-7)
+advmod(good-9, pretty-8)
+acl:relcl(taco-5, good-9)
+cc(got-2, but-10)
+nsubj(recommend-13, I-11)
+aux(recommend-13, would-12)
+conj:but(got-2, recommend-13)
+dobj(recommend-13, splitting-14)
+case(person-17, with-15)
+det(person-17, another-16)
+nmod:with(recommend-13, person-17)
+mark(big-22, since-18)
+nsubj(big-22, it-19)
+cop(big-22, 's-20)
+advmod(big-22, so-21)
+advcl:since(recommend-13, big-22)
+punct(got-2, .-23)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (15 tokens, sentiment: Negative):
+I'm giving this place 3 stars because of the experience with slow waiter.
+
+Tokens:
+[Text=I CharacterOffsetBegin=113 CharacterOffsetEnd=114 PartOfSpeech=PRP Lemma=I NamedEntityTag=O SentimentClass=Neutral]
+[Text='m CharacterOffsetBegin=114 CharacterOffsetEnd=116 PartOfSpeech=VBP Lemma=be NamedEntityTag=O SentimentClass=Neutral]
+[Text=giving CharacterOffsetBegin=117 CharacterOffsetEnd=123 PartOfSpeech=VBG Lemma=give NamedEntityTag=O SentimentClass=Neutral]
+[Text=this CharacterOffsetBegin=124 CharacterOffsetEnd=128 PartOfSpeech=DT Lemma=this NamedEntityTag=O SentimentClass=Neutral]
+[Text=place CharacterOffsetBegin=129 CharacterOffsetEnd=134 PartOfSpeech=NN Lemma=place NamedEntityTag=O SentimentClass=Neutral]
+[Text=3 CharacterOffsetBegin=135 CharacterOffsetEnd=136 PartOfSpeech=CD Lemma=3 NamedEntityTag=NUMBER NormalizedNamedEntityTag=3.0 SentimentClass=Neutral]
+[Text=stars CharacterOffsetBegin=137 CharacterOffsetEnd=142 PartOfSpeech=NNS Lemma=star NamedEntityTag=O SentimentClass=Neutral]
+[Text=because CharacterOffsetBegin=143 CharacterOffsetEnd=150 PartOfSpeech=IN Lemma=because NamedEntityTag=O SentimentClass=Neutral]
+[Text=of CharacterOffsetBegin=151 CharacterOffsetEnd=153 PartOfSpeech=IN Lemma=of NamedEntityTag=O SentimentClass=Neutral]
+[Text=the CharacterOffsetBegin=154 CharacterOffsetEnd=157 PartOfSpeech=DT Lemma=the NamedEntityTag=O SentimentClass=Neutral]
+[Text=experience CharacterOffsetBegin=158 CharacterOffsetEnd=168 PartOfSpeech=NN Lemma=experience NamedEntityTag=O SentimentClass=Neutral]
+[Text=with CharacterOffsetBegin=169 CharacterOffsetEnd=173 PartOfSpeech=IN Lemma=with NamedEntityTag=O SentimentClass=Neutral]
+[Text=slow CharacterOffsetBegin=174 CharacterOffsetEnd=178 PartOfSpeech=JJ Lemma=slow NamedEntityTag=O SentimentClass=Negative]
+[Text=waiter CharacterOffsetBegin=179 CharacterOffsetEnd=185 PartOfSpeech=NN Lemma=waiter NamedEntityTag=TITLE SentimentClass=Neutral]
+[Text=. CharacterOffsetBegin=185 CharacterOffsetEnd=186 PartOfSpeech=. Lemma=. NamedEntityTag=O SentimentClass=Neutral]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP 'm)
+      (VP (VBG giving)
+        (NP (DT this) (NN place))
+        (NP (CD 3) (NNS stars))
+        (PP (IN because) (IN of)
+          (NP
+            (NP (DT the) (NN experience))
+            (PP (IN with)
+              (NP (JJ slow) (NN waiter)))))))
+    (. .)))
+
+
+Sentiment-annotated binary tree:
+(ROOT|sentiment=1|prob=0.501 (NP|sentiment=2|prob=0.996 I)
+  (@S|sentiment=1|prob=0.468
+    (VP|sentiment=1|prob=0.405 (VBP|sentiment=2|prob=0.934 'm)
+      (VP|sentiment=1|prob=0.464
+        (@VP|sentiment=2|prob=0.829
+          (@VP|sentiment=2|prob=0.823 (VBG|sentiment=2|prob=0.992 giving)
+            (NP|sentiment=2|prob=0.917 (DT|sentiment=2|prob=0.998 this) (NN|sentiment=2|prob=0.996 place)))
+          (NP|sentiment=2|prob=0.963 (CD|sentiment=2|prob=0.993 3) (NNS|sentiment=2|prob=0.996 stars)))
+        (PP|sentiment=2|prob=0.584 (IN|sentiment=2|prob=0.999 because)
+          (@PP|sentiment=2|prob=0.493 (IN|sentiment=2|prob=0.993 of)
+            (NP|sentiment=1|prob=0.486
+              (NP|sentiment=2|prob=0.972 (DT|sentiment=2|prob=0.994 the) (NN|sentiment=2|prob=0.998 experience))
+              (PP|sentiment=2|prob=0.483 (IN|sentiment=2|prob=0.992 with)
+                (NP|sentiment=2|prob=0.477 (JJ|sentiment=1|prob=0.926 slow) (NN|sentiment=2|prob=0.631 waiter))))))))
+    (.|sentiment=2|prob=0.997 .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, giving-3)
+nsubj(giving-3, I-1)
+aux(giving-3, 'm-2)
+det(place-5, this-4)
+iobj(giving-3, place-5)
+nummod(stars-7, 3-6)
+dobj(giving-3, stars-7)
+case(experience-11, because-8)
+mwe(because-8, of-9)
+det(experience-11, the-10)
+nmod:because_of(giving-3, experience-11)
+case(waiter-14, with-12)
+amod(waiter-14, slow-13)
+nmod:with(experience-11, waiter-14)
+punct(giving-3, .-15)
+
+Extracted the following NER entity mentions:
+3	NUMBER
+waiter	TITLE
+
+Sentence #3 (21 tokens, sentiment: Negative):
+He took a long time to get water and napkins and I kept needing to make eye contact with him.
+
+Tokens:
+[Text=He CharacterOffsetBegin=187 CharacterOffsetEnd=189 PartOfSpeech=PRP Lemma=he NamedEntityTag=O SentimentClass=Neutral]
+[Text=took CharacterOffsetBegin=190 CharacterOffsetEnd=194 PartOfSpeech=VBD Lemma=take NamedEntityTag=O SentimentClass=Neutral]
+[Text=a CharacterOffsetBegin=195 CharacterOffsetEnd=196 PartOfSpeech=DT Lemma=a NamedEntityTag=O SentimentClass=Neutral]
+[Text=long CharacterOffsetBegin=197 CharacterOffsetEnd=201 PartOfSpeech=JJ Lemma=long NamedEntityTag=O SentimentClass=Neutral]
+[Text=time CharacterOffsetBegin=202 CharacterOffsetEnd=206 PartOfSpeech=NN Lemma=time NamedEntityTag=O SentimentClass=Neutral]
+[Text=to CharacterOffsetBegin=207 CharacterOffsetEnd=209 PartOfSpeech=TO Lemma=to NamedEntityTag=O SentimentClass=Neutral]
+[Text=get CharacterOffsetBegin=210 CharacterOffsetEnd=213 PartOfSpeech=VB Lemma=get NamedEntityTag=O SentimentClass=Neutral]
+[Text=water CharacterOffsetBegin=214 CharacterOffsetEnd=219 PartOfSpeech=NN Lemma=water NamedEntityTag=O SentimentClass=Neutral]
+[Text=and CharacterOffsetBegin=220 CharacterOffsetEnd=223 PartOfSpeech=CC Lemma=and NamedEntityTag=O SentimentClass=Neutral]
+[Text=napkins CharacterOffsetBegin=224 CharacterOffsetEnd=231 PartOfSpeech=NNS Lemma=napkin NamedEntityTag=O SentimentClass=Neutral]
+[Text=and CharacterOffsetBegin=232 CharacterOffsetEnd=235 PartOfSpeech=CC Lemma=and NamedEntityTag=O SentimentClass=Neutral]
+[Text=I CharacterOffsetBegin=236 CharacterOffsetEnd=237 PartOfSpeech=PRP Lemma=I NamedEntityTag=O SentimentClass=Neutral]
+[Text=kept CharacterOffsetBegin=238 CharacterOffsetEnd=242 PartOfSpeech=VBD Lemma=keep NamedEntityTag=O SentimentClass=Neutral]
+[Text=needing CharacterOffsetBegin=243 CharacterOffsetEnd=250 PartOfSpeech=VBG Lemma=need NamedEntityTag=O SentimentClass=Neutral]
+[Text=to CharacterOffsetBegin=251 CharacterOffsetEnd=253 PartOfSpeech=TO Lemma=to NamedEntityTag=O SentimentClass=Neutral]
+[Text=make CharacterOffsetBegin=254 CharacterOffsetEnd=258 PartOfSpeech=VB Lemma=make NamedEntityTag=O SentimentClass=Neutral]
+[Text=eye CharacterOffsetBegin=259 CharacterOffsetEnd=262 PartOfSpeech=NN Lemma=eye NamedEntityTag=O SentimentClass=Neutral]
+[Text=contact CharacterOffsetBegin=263 CharacterOffsetEnd=270 PartOfSpeech=NN Lemma=contact NamedEntityTag=O SentimentClass=Neutral]
+[Text=with CharacterOffsetBegin=271 CharacterOffsetEnd=275 PartOfSpeech=IN Lemma=with NamedEntityTag=O SentimentClass=Neutral]
+[Text=him CharacterOffsetBegin=276 CharacterOffsetEnd=279 PartOfSpeech=PRP Lemma=he NamedEntityTag=O SentimentClass=Neutral]
+[Text=. CharacterOffsetBegin=279 CharacterOffsetEnd=280 PartOfSpeech=. Lemma=. NamedEntityTag=O SentimentClass=Neutral]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP He))
+      (VP (VBD took)
+        (NP (DT a) (JJ long) (NN time))
+        (S
+          (VP (TO to)
+            (VP (VB get)
+              (NP (NN water)
+                (CC and)
+                (NNS napkins)))))))
+    (CC and)
+    (S
+      (NP (PRP I))
+      (VP (VBD kept)
+        (S
+          (VP (VBG needing)
+            (S
+              (VP (TO to)
+                (VP (VB make)
+                  (NP (NN eye) (NN contact))
+                  (PP (IN with)
+                    (NP (PRP him))))))))))
+    (. .)))
+
+
+Sentiment-annotated binary tree:
+(ROOT|sentiment=1|prob=0.607
+  (@S|sentiment=1|prob=0.555
+    (@S|sentiment=2|prob=0.566
+      (S|sentiment=2|prob=0.442 (NP|sentiment=2|prob=0.996 He)
+        (VP|sentiment=2|prob=0.613
+          (@VP|sentiment=2|prob=0.944 (VBD|sentiment=2|prob=0.980 took)
+            (NP|sentiment=2|prob=0.872 (DT|sentiment=2|prob=0.990 a)
+              (@NP|sentiment=2|prob=0.901 (JJ|sentiment=2|prob=0.993 long) (NN|sentiment=2|prob=0.999 time))))
+          (S|sentiment=2|prob=0.713 (TO|sentiment=2|prob=0.990 to)
+            (VP|sentiment=2|prob=0.625 (VB|sentiment=2|prob=0.994 get)
+              (NP|sentiment=2|prob=0.789
+                (@NP|sentiment=2|prob=0.929 (NN|sentiment=2|prob=0.994 water)
+                  (CC|sentiment=2|prob=0.996 and))
+                (NNS|sentiment=2|prob=0.631 napkins))))))
+      (CC|sentiment=2|prob=0.996 and))
+    (S|sentiment=2|prob=0.508 (NP|sentiment=2|prob=0.996 I)
+      (VP|sentiment=2|prob=0.625 (VBD|sentiment=2|prob=0.956 kept)
+        (S|sentiment=2|prob=0.688 (VBG|sentiment=2|prob=0.851 needing)
+          (S|sentiment=2|prob=0.942 (TO|sentiment=2|prob=0.990 to)
+            (VP|sentiment=2|prob=0.908
+              (@VP|sentiment=2|prob=0.950 (VB|sentiment=2|prob=0.997 make)
+                (NP|sentiment=2|prob=0.957 (NN|sentiment=2|prob=0.996 eye) (NN|sentiment=2|prob=0.969 contact)))
+              (PP|sentiment=2|prob=0.951 (IN|sentiment=2|prob=0.992 with) (NP|sentiment=2|prob=0.991 him))))))))
+  (.|sentiment=2|prob=0.997 .))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, took-2)
+nsubj(took-2, He-1)
+det(time-5, a-3)
+amod(time-5, long-4)
+dobj(took-2, time-5)
+mark(get-7, to-6)
+advcl:to(took-2, get-7)
+dobj(get-7, water-8)
+cc(water-8, and-9)
+dobj(get-7, napkins-10)
+conj:and(water-8, napkins-10)
+cc(took-2, and-11)
+nsubj(kept-13, I-12)
+conj:and(took-2, kept-13)
+xcomp(kept-13, needing-14)
+mark(make-16, to-15)
+xcomp(needing-14, make-16)
+compound(contact-18, eye-17)
+dobj(make-16, contact-18)
+case(him-20, with-19)
+nmod:with(make-16, him-20)
+punct(took-2, .-21)
+
+Extracted the following NER entity mentions:
+He	PERSON
+him	PERSON
+
+Sentence #4 (37 tokens, sentiment: Negative):
+The second thing was I'm pretty sure he forgot to get our food because it took 40min to get to our table and the food was pretty much already cold and fries were hard.
+
+Tokens:
+[Text=The CharacterOffsetBegin=281 CharacterOffsetEnd=284 PartOfSpeech=DT Lemma=the NamedEntityTag=O SentimentClass=Neutral]
+[Text=second CharacterOffsetBegin=285 CharacterOffsetEnd=291 PartOfSpeech=JJ Lemma=second NamedEntityTag=ORDINAL NormalizedNamedEntityTag=2.0 SentimentClass=Neutral]
+[Text=thing CharacterOffsetBegin=292 CharacterOffsetEnd=297 PartOfSpeech=NN Lemma=thing NamedEntityTag=O SentimentClass=Neutral]
+[Text=was CharacterOffsetBegin=298 CharacterOffsetEnd=301 PartOfSpeech=VBD Lemma=be NamedEntityTag=O SentimentClass=Neutral]
+[Text=I CharacterOffsetBegin=302 CharacterOffsetEnd=303 PartOfSpeech=PRP Lemma=I NamedEntityTag=O SentimentClass=Neutral]
+[Text='m CharacterOffsetBegin=303 CharacterOffsetEnd=305 PartOfSpeech=VBP Lemma=be NamedEntityTag=O SentimentClass=Neutral]
+[Text=pretty CharacterOffsetBegin=306 CharacterOffsetEnd=312 PartOfSpeech=RB Lemma=pretty NamedEntityTag=O SentimentClass=Very positive]
+[Text=sure CharacterOffsetBegin=313 CharacterOffsetEnd=317 PartOfSpeech=RB Lemma=sure NamedEntityTag=O SentimentClass=Neutral]
+[Text=he CharacterOffsetBegin=318 CharacterOffsetEnd=320 PartOfSpeech=PRP Lemma=he NamedEntityTag=O SentimentClass=Neutral]
+[Text=forgot CharacterOffsetBegin=321 CharacterOffsetEnd=327 PartOfSpeech=VBD Lemma=forget NamedEntityTag=O SentimentClass=Positive]
+[Text=to CharacterOffsetBegin=328 CharacterOffsetEnd=330 PartOfSpeech=TO Lemma=to NamedEntityTag=O SentimentClass=Neutral]
+[Text=get CharacterOffsetBegin=331 CharacterOffsetEnd=334 PartOfSpeech=VB Lemma=get NamedEntityTag=O SentimentClass=Neutral]
+[Text=our CharacterOffsetBegin=335 CharacterOffsetEnd=338 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O SentimentClass=Neutral]
+[Text=food CharacterOffsetBegin=339 CharacterOffsetEnd=343 PartOfSpeech=NN Lemma=food NamedEntityTag=O SentimentClass=Neutral]
+[Text=because CharacterOffsetBegin=344 CharacterOffsetEnd=351 PartOfSpeech=IN Lemma=because NamedEntityTag=O SentimentClass=Neutral]
+[Text=it CharacterOffsetBegin=352 CharacterOffsetEnd=354 PartOfSpeech=PRP Lemma=it NamedEntityTag=O SentimentClass=Neutral]
+[Text=took CharacterOffsetBegin=355 CharacterOffsetEnd=359 PartOfSpeech=VBD Lemma=take NamedEntityTag=O SentimentClass=Neutral]
+[Text=40 CharacterOffsetBegin=360 CharacterOffsetEnd=362 PartOfSpeech=CD Lemma=40 NamedEntityTag=DURATION NormalizedNamedEntityTag=PT40M Timex=<TIMEX3 tid="t1" type="DURATION" value="PT40M">40min</TIMEX3> SentimentClass=Neutral]
+[Text=min CharacterOffsetBegin=362 CharacterOffsetEnd=365 PartOfSpeech=NN Lemma=min NamedEntityTag=DURATION NormalizedNamedEntityTag=PT40M Timex=<TIMEX3 tid="t1" type="DURATION" value="PT40M">40min</TIMEX3> SentimentClass=Neutral]
+[Text=to CharacterOffsetBegin=366 CharacterOffsetEnd=368 PartOfSpeech=TO Lemma=to NamedEntityTag=O SentimentClass=Neutral]
+[Text=get CharacterOffsetBegin=369 CharacterOffsetEnd=372 PartOfSpeech=VB Lemma=get NamedEntityTag=O SentimentClass=Neutral]
+[Text=to CharacterOffsetBegin=373 CharacterOffsetEnd=375 PartOfSpeech=TO Lemma=to NamedEntityTag=O SentimentClass=Neutral]
+[Text=our CharacterOffsetBegin=376 CharacterOffsetEnd=379 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O SentimentClass=Neutral]
+[Text=table CharacterOffsetBegin=380 CharacterOffsetEnd=385 PartOfSpeech=NN Lemma=table NamedEntityTag=O SentimentClass=Neutral]
+[Text=and CharacterOffsetBegin=386 CharacterOffsetEnd=389 PartOfSpeech=CC Lemma=and NamedEntityTag=O SentimentClass=Neutral]
+[Text=the CharacterOffsetBegin=390 CharacterOffsetEnd=393 PartOfSpeech=DT Lemma=the NamedEntityTag=O SentimentClass=Neutral]
+[Text=food CharacterOffsetBegin=394 CharacterOffsetEnd=398 PartOfSpeech=NN Lemma=food NamedEntityTag=O SentimentClass=Neutral]
+[Text=was CharacterOffsetBegin=399 CharacterOffsetEnd=402 PartOfSpeech=VBD Lemma=be NamedEntityTag=O SentimentClass=Neutral]
+[Text=pretty CharacterOffsetBegin=403 CharacterOffsetEnd=409 PartOfSpeech=RB Lemma=pretty NamedEntityTag=O SentimentClass=Very positive]
+[Text=much CharacterOffsetBegin=410 CharacterOffsetEnd=414 PartOfSpeech=JJ Lemma=much NamedEntityTag=O SentimentClass=Neutral]
+[Text=already CharacterOffsetBegin=415 CharacterOffsetEnd=422 PartOfSpeech=RB Lemma=already NamedEntityTag=O SentimentClass=Neutral]
+[Text=cold CharacterOffsetBegin=423 CharacterOffsetEnd=427 PartOfSpeech=JJ Lemma=cold NamedEntityTag=O SentimentClass=Negative]
+[Text=and CharacterOffsetBegin=428 CharacterOffsetEnd=431 PartOfSpeech=CC Lemma=and NamedEntityTag=O SentimentClass=Neutral]
+[Text=fries CharacterOffsetBegin=432 CharacterOffsetEnd=437 PartOfSpeech=NNS Lemma=fries NamedEntityTag=O SentimentClass=Neutral]
+[Text=were CharacterOffsetBegin=438 CharacterOffsetEnd=442 PartOfSpeech=VBD Lemma=be NamedEntityTag=O SentimentClass=Neutral]
+[Text=hard CharacterOffsetBegin=443 CharacterOffsetEnd=447 PartOfSpeech=RB Lemma=hard NamedEntityTag=O SentimentClass=Neutral]
+[Text=. CharacterOffsetBegin=447 CharacterOffsetEnd=448 PartOfSpeech=. Lemma=. NamedEntityTag=O SentimentClass=Neutral]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (DT The) (JJ second) (NN thing))
+      (VP (VBD was)
+        (SBAR
+          (S
+            (NP (PRP I))
+            (VP (VBP 'm)
+              (ADVP (RB pretty) (RB sure)
+                (SBAR
+                  (S
+                    (NP (PRP he))
+                    (VP (VBD forgot)
+                      (S
+                        (VP (TO to)
+                          (VP (VB get)
+                            (NP (PRP$ our) (NN food))
+                            (SBAR (IN because)
+                              (S
+                                (S
+                                  (NP (PRP it))
+                                  (VP (VBD took)
+                                    (NP (CD 40) (NN min))
+                                    (S
+                                      (VP (TO to)
+                                        (VP (VB get)
+                                          (PP (TO to)
+                                            (NP (PRP$ our) (NN table))))))))
+                                (CC and)
+                                (S
+                                  (NP (DT the) (NN food))
+                                  (VP (VBD was)
+                                    (ADVP (RB pretty) (JJ much))
+                                    (ADJP (RB already) (JJ cold))))))))))))))))))
+    (CC and)
+    (S
+      (NP (NNS fries))
+      (VP (VBD were)
+        (ADVP (RB hard))))
+    (. .)))
+
+
+Sentiment-annotated binary tree:
+(ROOT|sentiment=1|prob=0.601
+  (@S|sentiment=1|prob=0.616
+    (@S|sentiment=1|prob=0.714
+      (S|sentiment=1|prob=0.695
+        (NP|sentiment=2|prob=0.982 (DT|sentiment=2|prob=0.993 The)
+          (@NP|sentiment=2|prob=0.947 (JJ|sentiment=2|prob=0.995 second) (NN|sentiment=2|prob=0.996 thing)))
+        (VP|sentiment=1|prob=0.648 (VBD|sentiment=2|prob=0.996 was)
+          (SBAR|sentiment=1|prob=0.399 (NP|sentiment=2|prob=0.996 I)
+            (VP|sentiment=2|prob=0.553 (VBP|sentiment=2|prob=0.934 'm)
+              (ADVP|sentiment=2|prob=0.450 (RB|sentiment=4|prob=0.763 pretty)
+                (@ADVP|sentiment=1|prob=0.482 (RB|sentiment=2|prob=0.993 sure)
+                  (SBAR|sentiment=2|prob=0.516 (NP|sentiment=2|prob=0.993 he)
+                    (VP|sentiment=2|prob=0.519 (VBD|sentiment=3|prob=0.570 forgot)
+                      (S|sentiment=1|prob=0.506 (TO|sentiment=2|prob=0.990 to)
+                        (VP|sentiment=1|prob=0.567
+                          (@VP|sentiment=2|prob=0.697 (VB|sentiment=2|prob=0.994 get)
+                            (NP|sentiment=2|prob=0.981 (PRP$|sentiment=2|prob=0.996 our) (NN|sentiment=2|prob=0.993 food)))
+                          (SBAR|sentiment=2|prob=0.503 (IN|sentiment=2|prob=0.999 because)
+                            (S|sentiment=1|prob=0.491
+                              (@S|sentiment=2|prob=0.618
+                                (S|sentiment=2|prob=0.556 (NP|sentiment=2|prob=0.993 it)
+                                  (VP|sentiment=2|prob=0.531
+                                    (@VP|sentiment=2|prob=0.702 (VBD|sentiment=2|prob=0.980 took)
+                                      (NP|sentiment=2|prob=0.577 (CD|sentiment=2|prob=0.956 40) (NN|sentiment=2|prob=0.631 min)))
+                                    (S|sentiment=2|prob=0.815 (TO|sentiment=2|prob=0.990 to)
+                                      (VP|sentiment=2|prob=0.678 (VB|sentiment=2|prob=0.994 get)
+                                        (PP|sentiment=2|prob=0.954 (TO|sentiment=2|prob=0.990 to)
+                                          (NP|sentiment=2|prob=0.979 (PRP$|sentiment=2|prob=0.996 our) (NN|sentiment=2|prob=0.994 table)))))))
+                                (CC|sentiment=2|prob=0.996 and))
+                              (S|sentiment=2|prob=0.731
+                                (NP|sentiment=2|prob=0.984 (DT|sentiment=2|prob=0.994 the) (NN|sentiment=2|prob=0.993 food))
+                                (VP|sentiment=2|prob=0.690
+                                  (@VP|sentiment=2|prob=0.706 (VBD|sentiment=2|prob=0.996 was)
+                                    (ADVP|sentiment=2|prob=0.770 (RB|sentiment=4|prob=0.763 pretty) (JJ|sentiment=2|prob=0.997 much)))
+                                  (ADJP|sentiment=2|prob=0.749 (RB|sentiment=2|prob=0.987 already) (JJ|sentiment=1|prob=0.913 cold))))))))))))))))
+      (CC|sentiment=2|prob=0.996 and))
+    (S|sentiment=2|prob=0.623 (NP|sentiment=2|prob=0.631 fries)
+      (VP|sentiment=2|prob=0.934 (VBD|sentiment=2|prob=0.992 were) (ADVP|sentiment=2|prob=0.987 hard))))
+  (.|sentiment=2|prob=0.997 .))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, was-4)
+det(thing-3, The-1)
+amod(thing-3, second-2)
+nsubj(was-4, thing-3)
+nsubj('m-6, I-5)
+ccomp(was-4, 'm-6)
+advmod(sure-8, pretty-7)
+advmod('m-6, sure-8)
+nsubj(forgot-10, he-9)
+nsubj:xsubj(get-12, he-9)
+dep(sure-8, forgot-10)
+mark(get-12, to-11)
+xcomp(forgot-10, get-12)
+nmod:poss(food-14, our-13)
+dobj(get-12, food-14)
+mark(took-17, because-15)
+nsubj(took-17, it-16)
+advcl:because(get-12, took-17)
+nummod(min-19, 40-18)
+dobj(took-17, min-19)
+mark(get-21, to-20)
+advcl:to(took-17, get-21)
+case(table-24, to-22)
+nmod:poss(table-24, our-23)
+nmod:to(get-21, table-24)
+cc(took-17, and-25)
+det(food-27, the-26)
+nsubj(cold-32, food-27)
+cop(cold-32, was-28)
+advmod(much-30, pretty-29)
+advmod(cold-32, much-30)
+advmod(cold-32, already-31)
+advcl:because(get-12, cold-32)
+conj:and(took-17, cold-32)
+cc(was-4, and-33)
+nsubj(were-35, fries-34)
+conj:and(was-4, were-35)
+advmod(were-35, hard-36)
+punct(was-4, .-37)
+
+Extracted the following NER entity mentions:
+second	ORDINAL
+40min	DURATION
+he	PERSON
+
+Coreference set:
+	(1,11,[11,12]) -> (1,1,[1,2]), that is: "I" -> "I"
+	(2,1,[1,2]) -> (1,1,[1,2]), that is: "I" -> "I"
+	(3,12,[12,13]) -> (1,1,[1,2]), that is: "I" -> "I"
+	(4,5,[5,6]) -> (1,1,[1,2]), that is: "I" -> "I"
+
+Coreference set:
+	(3,1,[1,2]) -> (1,17,[16,18]), that is: "He" -> "another person"
+	(3,20,[20,21]) -> (1,17,[16,18]), that is: "him" -> "another person"
+	(4,9,[9,10]) -> (1,17,[16,18]), that is: "he" -> "another person"
+
+Coreference set:
+	(4,16,[16,17]) -> (4,14,[13,15]), that is: "it" -> "our food"
+	(4,27,[26,28]) -> (4,14,[13,15]), that is: "the food" -> "our food"
+
+Coreference set:
+	(4,23,[23,24]) -> (4,13,[13,14]), that is: "our" -> "our"

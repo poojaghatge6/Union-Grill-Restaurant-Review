@@ -1,0 +1,490 @@
+
+Sentence #1 (2 tokens, sentiment: Neutral):
+Delicious!
+
+Tokens:
+[Text=Delicious CharacterOffsetBegin=0 CharacterOffsetEnd=9 PartOfSpeech=NNP Lemma=Delicious NamedEntityTag=O SentimentClass=Neutral]
+[Text=! CharacterOffsetBegin=9 CharacterOffsetEnd=10 PartOfSpeech=. Lemma=! NamedEntityTag=O SentimentClass=Neutral]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNP Delicious))
+    (. !)))
+
+
+Sentiment-annotated binary tree:
+(ROOT|sentiment=2|prob=0.456 (NP|sentiment=2|prob=0.631 Delicious) (.|sentiment=2|prob=0.999 !))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Delicious-1)
+punct(Delicious-1, !-2)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (16 tokens, sentiment: Negative):
+We've always meant to stop in to try the place and we finally did!
+
+Tokens:
+[Text=We CharacterOffsetBegin=11 CharacterOffsetEnd=13 PartOfSpeech=PRP Lemma=we NamedEntityTag=O SentimentClass=Neutral]
+[Text='ve CharacterOffsetBegin=13 CharacterOffsetEnd=16 PartOfSpeech=VBP Lemma=have NamedEntityTag=O SentimentClass=Neutral]
+[Text=always CharacterOffsetBegin=17 CharacterOffsetEnd=23 PartOfSpeech=RB Lemma=always NamedEntityTag=O SentimentClass=Neutral]
+[Text=meant CharacterOffsetBegin=24 CharacterOffsetEnd=29 PartOfSpeech=VBN Lemma=mean NamedEntityTag=O SentimentClass=Neutral]
+[Text=to CharacterOffsetBegin=30 CharacterOffsetEnd=32 PartOfSpeech=TO Lemma=to NamedEntityTag=O SentimentClass=Neutral]
+[Text=stop CharacterOffsetBegin=33 CharacterOffsetEnd=37 PartOfSpeech=VB Lemma=stop NamedEntityTag=O SentimentClass=Neutral]
+[Text=in CharacterOffsetBegin=38 CharacterOffsetEnd=40 PartOfSpeech=IN Lemma=in NamedEntityTag=O SentimentClass=Neutral]
+[Text=to CharacterOffsetBegin=41 CharacterOffsetEnd=43 PartOfSpeech=TO Lemma=to NamedEntityTag=O SentimentClass=Neutral]
+[Text=try CharacterOffsetBegin=44 CharacterOffsetEnd=47 PartOfSpeech=VB Lemma=try NamedEntityTag=O SentimentClass=Neutral]
+[Text=the CharacterOffsetBegin=48 CharacterOffsetEnd=51 PartOfSpeech=DT Lemma=the NamedEntityTag=O SentimentClass=Neutral]
+[Text=place CharacterOffsetBegin=52 CharacterOffsetEnd=57 PartOfSpeech=NN Lemma=place NamedEntityTag=O SentimentClass=Neutral]
+[Text=and CharacterOffsetBegin=58 CharacterOffsetEnd=61 PartOfSpeech=CC Lemma=and NamedEntityTag=O SentimentClass=Neutral]
+[Text=we CharacterOffsetBegin=62 CharacterOffsetEnd=64 PartOfSpeech=PRP Lemma=we NamedEntityTag=O SentimentClass=Neutral]
+[Text=finally CharacterOffsetBegin=65 CharacterOffsetEnd=72 PartOfSpeech=RB Lemma=finally NamedEntityTag=O SentimentClass=Neutral]
+[Text=did CharacterOffsetBegin=73 CharacterOffsetEnd=76 PartOfSpeech=VBD Lemma=do NamedEntityTag=O SentimentClass=Neutral]
+[Text=! CharacterOffsetBegin=76 CharacterOffsetEnd=77 PartOfSpeech=. Lemma=! NamedEntityTag=O SentimentClass=Neutral]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (PRP We))
+      (VP (VBP 've)
+        (ADVP (RB always))
+        (VP (VBN meant)
+          (S
+            (VP (TO to)
+              (VP (VB stop)
+                (PP (IN in))
+                (S
+                  (VP (TO to)
+                    (VP (VB try)
+                      (NP (DT the) (NN place)))))))))))
+    (CC and)
+    (S
+      (NP (PRP we))
+      (ADVP (RB finally))
+      (VP (VBD did)))
+    (. !)))
+
+
+Sentiment-annotated binary tree:
+(ROOT|sentiment=1|prob=0.487
+  (@S|sentiment=1|prob=0.495
+    (@S|sentiment=1|prob=0.646
+      (S|sentiment=1|prob=0.662 (NP|sentiment=2|prob=0.992 We)
+        (VP|sentiment=2|prob=0.684
+          (@VP|sentiment=2|prob=0.991 (VBP|sentiment=2|prob=0.996 've) (ADVP|sentiment=2|prob=0.996 always))
+          (VP|sentiment=2|prob=0.647 (VBN|sentiment=2|prob=0.959 meant)
+            (S|sentiment=2|prob=0.597 (TO|sentiment=2|prob=0.990 to)
+              (VP|sentiment=2|prob=0.478
+                (@VP|sentiment=2|prob=0.706 (VB|sentiment=2|prob=0.921 stop) (PP|sentiment=2|prob=0.993 in))
+                (S|sentiment=2|prob=0.861 (TO|sentiment=2|prob=0.990 to)
+                  (VP|sentiment=2|prob=0.842 (VB|sentiment=2|prob=0.993 try)
+                    (NP|sentiment=2|prob=0.910 (DT|sentiment=2|prob=0.994 the) (NN|sentiment=2|prob=0.996 place)))))))))
+      (CC|sentiment=2|prob=0.996 and))
+    (S|sentiment=2|prob=0.984 (NP|sentiment=2|prob=0.996 we)
+      (@S|sentiment=2|prob=0.985 (ADVP|sentiment=2|prob=0.997 finally) (VP|sentiment=2|prob=0.996 did))))
+  (.|sentiment=2|prob=0.999 !))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, meant-4)
+nsubj(meant-4, We-1)
+nsubj:xsubj(stop-6, We-1)
+aux(meant-4, 've-2)
+advmod(meant-4, always-3)
+mark(stop-6, to-5)
+xcomp(meant-4, stop-6)
+nmod(stop-6, in-7)
+mark(try-9, to-8)
+xcomp(stop-6, try-9)
+det(place-11, the-10)
+dobj(try-9, place-11)
+cc(meant-4, and-12)
+nsubj(did-15, we-13)
+advmod(did-15, finally-14)
+conj:and(meant-4, did-15)
+punct(meant-4, !-16)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (24 tokens, sentiment: Positive):
+The atmosphere is nice, the local draft list is great and the fish taco and fish sandwich were out of this world.
+
+Tokens:
+[Text=The CharacterOffsetBegin=78 CharacterOffsetEnd=81 PartOfSpeech=DT Lemma=the NamedEntityTag=O SentimentClass=Neutral]
+[Text=atmosphere CharacterOffsetBegin=82 CharacterOffsetEnd=92 PartOfSpeech=NN Lemma=atmosphere NamedEntityTag=O SentimentClass=Neutral]
+[Text=is CharacterOffsetBegin=93 CharacterOffsetEnd=95 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O SentimentClass=Neutral]
+[Text=nice CharacterOffsetBegin=96 CharacterOffsetEnd=100 PartOfSpeech=JJ Lemma=nice NamedEntityTag=O SentimentClass=Positive]
+[Text=, CharacterOffsetBegin=100 CharacterOffsetEnd=101 PartOfSpeech=, Lemma=, NamedEntityTag=O SentimentClass=Neutral]
+[Text=the CharacterOffsetBegin=102 CharacterOffsetEnd=105 PartOfSpeech=DT Lemma=the NamedEntityTag=O SentimentClass=Neutral]
+[Text=local CharacterOffsetBegin=106 CharacterOffsetEnd=111 PartOfSpeech=JJ Lemma=local NamedEntityTag=O SentimentClass=Positive]
+[Text=draft CharacterOffsetBegin=112 CharacterOffsetEnd=117 PartOfSpeech=NN Lemma=draft NamedEntityTag=O SentimentClass=Neutral]
+[Text=list CharacterOffsetBegin=118 CharacterOffsetEnd=122 PartOfSpeech=NN Lemma=list NamedEntityTag=O SentimentClass=Negative]
+[Text=is CharacterOffsetBegin=123 CharacterOffsetEnd=125 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O SentimentClass=Neutral]
+[Text=great CharacterOffsetBegin=126 CharacterOffsetEnd=131 PartOfSpeech=JJ Lemma=great NamedEntityTag=O SentimentClass=Very positive]
+[Text=and CharacterOffsetBegin=132 CharacterOffsetEnd=135 PartOfSpeech=CC Lemma=and NamedEntityTag=O SentimentClass=Neutral]
+[Text=the CharacterOffsetBegin=136 CharacterOffsetEnd=139 PartOfSpeech=DT Lemma=the NamedEntityTag=O SentimentClass=Neutral]
+[Text=fish CharacterOffsetBegin=140 CharacterOffsetEnd=144 PartOfSpeech=NN Lemma=fish NamedEntityTag=O SentimentClass=Neutral]
+[Text=taco CharacterOffsetBegin=145 CharacterOffsetEnd=149 PartOfSpeech=NN Lemma=taco NamedEntityTag=O SentimentClass=Neutral]
+[Text=and CharacterOffsetBegin=150 CharacterOffsetEnd=153 PartOfSpeech=CC Lemma=and NamedEntityTag=O SentimentClass=Neutral]
+[Text=fish CharacterOffsetBegin=154 CharacterOffsetEnd=158 PartOfSpeech=NN Lemma=fish NamedEntityTag=O SentimentClass=Neutral]
+[Text=sandwich CharacterOffsetBegin=159 CharacterOffsetEnd=167 PartOfSpeech=NN Lemma=sandwich NamedEntityTag=O SentimentClass=Neutral]
+[Text=were CharacterOffsetBegin=168 CharacterOffsetEnd=172 PartOfSpeech=VBD Lemma=be NamedEntityTag=O SentimentClass=Neutral]
+[Text=out CharacterOffsetBegin=173 CharacterOffsetEnd=176 PartOfSpeech=IN Lemma=out NamedEntityTag=O SentimentClass=Negative]
+[Text=of CharacterOffsetBegin=177 CharacterOffsetEnd=179 PartOfSpeech=IN Lemma=of NamedEntityTag=O SentimentClass=Neutral]
+[Text=this CharacterOffsetBegin=180 CharacterOffsetEnd=184 PartOfSpeech=DT Lemma=this NamedEntityTag=O SentimentClass=Neutral]
+[Text=world CharacterOffsetBegin=185 CharacterOffsetEnd=190 PartOfSpeech=NN Lemma=world NamedEntityTag=O SentimentClass=Neutral]
+[Text=. CharacterOffsetBegin=190 CharacterOffsetEnd=191 PartOfSpeech=. Lemma=. NamedEntityTag=O SentimentClass=Neutral]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (DT The) (NN atmosphere))
+      (VP (VBZ is)
+        (ADJP (JJ nice))))
+    (, ,)
+    (S
+      (NP (DT the) (JJ local) (NN draft) (NN list))
+      (VP (VBZ is)
+        (ADJP (JJ great))))
+    (CC and)
+    (S
+      (NP (DT the) (NN fish) (NN taco)
+        (CC and)
+        (NN fish) (NN sandwich))
+      (VP (VBD were)
+        (ADVP (IN out))
+        (PP (IN of)
+          (NP (DT this) (NN world)))))
+    (. .)))
+
+
+Sentiment-annotated binary tree:
+(ROOT|sentiment=3|prob=0.823
+  (@S|sentiment=3|prob=0.767
+    (@S|sentiment=3|prob=0.770
+      (@S|sentiment=3|prob=0.629
+        (@S|sentiment=3|prob=0.785
+          (S|sentiment=3|prob=0.740
+            (NP|sentiment=2|prob=0.952 (DT|sentiment=2|prob=0.993 The) (NN|sentiment=2|prob=0.990 atmosphere))
+            (VP|sentiment=3|prob=0.532 (VBZ|sentiment=2|prob=0.989 is) (ADJP|sentiment=3|prob=0.941 nice)))
+          (,|sentiment=2|prob=0.997 ,))
+        (S|sentiment=3|prob=0.564
+          (NP|sentiment=2|prob=0.768 (DT|sentiment=2|prob=0.994 the)
+            (@NP|sentiment=2|prob=0.646 (JJ|sentiment=3|prob=0.780 local)
+              (@NP|sentiment=2|prob=0.786 (NN|sentiment=2|prob=0.857 draft) (NN|sentiment=1|prob=0.775 list))))
+          (VP|sentiment=3|prob=0.536 (VBZ|sentiment=2|prob=0.989 is) (ADJP|sentiment=4|prob=0.908 great))))
+      (CC|sentiment=2|prob=0.996 and))
+    (S|sentiment=2|prob=0.618
+      (NP|sentiment=2|prob=0.830 (DT|sentiment=2|prob=0.994 the)
+        (@NP|sentiment=2|prob=0.773 (NN|sentiment=2|prob=0.993 fish)
+          (@NP|sentiment=2|prob=0.668 (NN|sentiment=2|prob=0.631 taco)
+            (@NP|sentiment=2|prob=0.946 (CC|sentiment=2|prob=0.996 and)
+              (@NP|sentiment=2|prob=0.989 (NN|sentiment=2|prob=0.993 fish) (NN|sentiment=2|prob=0.948 sandwich))))))
+      (VP|sentiment=2|prob=0.723
+        (@VP|sentiment=2|prob=0.927 (VBD|sentiment=2|prob=0.992 were) (ADVP|sentiment=1|prob=0.945 out))
+        (PP|sentiment=2|prob=0.962 (IN|sentiment=2|prob=0.993 of)
+          (NP|sentiment=2|prob=0.981 (DT|sentiment=2|prob=0.998 this) (NN|sentiment=2|prob=0.996 world))))))
+  (.|sentiment=2|prob=0.997 .))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, nice-4)
+det(atmosphere-2, The-1)
+nsubj(nice-4, atmosphere-2)
+cop(nice-4, is-3)
+punct(nice-4, ,-5)
+det(list-9, the-6)
+amod(list-9, local-7)
+compound(list-9, draft-8)
+nsubj(great-11, list-9)
+cop(great-11, is-10)
+conj:and(nice-4, great-11)
+cc(nice-4, and-12)
+det(taco-15, the-13)
+compound(taco-15, fish-14)
+nsubj(world-23, taco-15)
+cc(taco-15, and-16)
+compound(sandwich-18, fish-17)
+conj:and(taco-15, sandwich-18)
+nsubj(world-23, sandwich-18)
+cop(world-23, were-19)
+case(world-23, out-20)
+mwe(out-20, of-21)
+det(world-23, this-22)
+conj:and(nice-4, world-23)
+punct(nice-4, .-24)
+
+Extracted the following NER entity mentions:
+
+Sentence #4 (3 tokens, sentiment: Neutral):
+HUGE potions!
+
+Tokens:
+[Text=HUGE CharacterOffsetBegin=192 CharacterOffsetEnd=196 PartOfSpeech=JJ Lemma=huge NamedEntityTag=O SentimentClass=Neutral]
+[Text=potions CharacterOffsetBegin=197 CharacterOffsetEnd=204 PartOfSpeech=NNS Lemma=potion NamedEntityTag=O SentimentClass=Neutral]
+[Text=! CharacterOffsetBegin=204 CharacterOffsetEnd=205 PartOfSpeech=. Lemma=! NamedEntityTag=O SentimentClass=Neutral]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (JJ HUGE) (NNS potions))
+    (. !)))
+
+
+Sentiment-annotated binary tree:
+(ROOT|sentiment=2|prob=0.368
+  (NP|sentiment=2|prob=0.583 (JJ|sentiment=2|prob=0.631 HUGE) (NNS|sentiment=2|prob=0.631 potions))
+  (.|sentiment=2|prob=0.999 !))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, potions-2)
+amod(potions-2, HUGE-1)
+punct(potions-2, !-3)
+
+Extracted the following NER entity mentions:
+
+Sentence #5 (10 tokens, sentiment: Negative):
+We easily could have shared and still have leftovers.
+
+Tokens:
+[Text=We CharacterOffsetBegin=206 CharacterOffsetEnd=208 PartOfSpeech=PRP Lemma=we NamedEntityTag=O SentimentClass=Neutral]
+[Text=easily CharacterOffsetBegin=209 CharacterOffsetEnd=215 PartOfSpeech=RB Lemma=easily NamedEntityTag=O SentimentClass=Positive]
+[Text=could CharacterOffsetBegin=216 CharacterOffsetEnd=221 PartOfSpeech=MD Lemma=could NamedEntityTag=O SentimentClass=Neutral]
+[Text=have CharacterOffsetBegin=222 CharacterOffsetEnd=226 PartOfSpeech=VB Lemma=have NamedEntityTag=O SentimentClass=Neutral]
+[Text=shared CharacterOffsetBegin=227 CharacterOffsetEnd=233 PartOfSpeech=VBN Lemma=share NamedEntityTag=O SentimentClass=Neutral]
+[Text=and CharacterOffsetBegin=234 CharacterOffsetEnd=237 PartOfSpeech=CC Lemma=and NamedEntityTag=O SentimentClass=Neutral]
+[Text=still CharacterOffsetBegin=238 CharacterOffsetEnd=243 PartOfSpeech=RB Lemma=still NamedEntityTag=O SentimentClass=Neutral]
+[Text=have CharacterOffsetBegin=244 CharacterOffsetEnd=248 PartOfSpeech=VBP Lemma=have NamedEntityTag=O SentimentClass=Neutral]
+[Text=leftovers CharacterOffsetBegin=249 CharacterOffsetEnd=258 PartOfSpeech=NNS Lemma=leftovers NamedEntityTag=O SentimentClass=Positive]
+[Text=. CharacterOffsetBegin=258 CharacterOffsetEnd=259 PartOfSpeech=. Lemma=. NamedEntityTag=O SentimentClass=Neutral]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP We))
+    (ADVP (RB easily))
+    (VP
+      (VP (MD could)
+        (VP (VB have)
+          (VP (VBN shared))))
+      (CC and)
+      (ADVP (RB still))
+      (VP (VBP have)
+        (NP (NNS leftovers))))
+    (. .)))
+
+
+Sentiment-annotated binary tree:
+(ROOT|sentiment=1|prob=0.622 (NP|sentiment=2|prob=0.992 We)
+  (@S|sentiment=1|prob=0.411 (ADVP|sentiment=3|prob=0.948 easily)
+    (@S|sentiment=1|prob=0.443
+      (VP|sentiment=1|prob=0.423
+        (@VP|sentiment=2|prob=0.968
+          (@VP|sentiment=2|prob=0.871
+            (VP|sentiment=2|prob=0.825 (MD|sentiment=2|prob=0.997 could)
+              (VP|sentiment=2|prob=0.818 (VB|sentiment=2|prob=0.991 have) (VP|sentiment=2|prob=0.837 shared)))
+            (CC|sentiment=2|prob=0.996 and))
+          (ADVP|sentiment=2|prob=0.998 still))
+        (VP|sentiment=2|prob=0.435 (VBP|sentiment=2|prob=0.991 have) (NP|sentiment=3|prob=0.437 leftovers)))
+      (.|sentiment=2|prob=0.997 .))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, shared-5)
+nsubj(shared-5, We-1)
+nsubj(have-8, We-1)
+advmod(shared-5, easily-2)
+aux(shared-5, could-3)
+aux(shared-5, have-4)
+cc(shared-5, and-6)
+advmod(have-8, still-7)
+conj:and(shared-5, have-8)
+dobj(have-8, leftovers-9)
+punct(shared-5, .-10)
+
+Extracted the following NER entity mentions:
+
+Sentence #6 (12 tokens, sentiment: Positive):
+The menu isn't huge but that's a good thing!
+
+Tokens:
+[Text=The CharacterOffsetBegin=260 CharacterOffsetEnd=263 PartOfSpeech=DT Lemma=the NamedEntityTag=O SentimentClass=Neutral]
+[Text=menu CharacterOffsetBegin=264 CharacterOffsetEnd=268 PartOfSpeech=NN Lemma=menu NamedEntityTag=O SentimentClass=Neutral]
+[Text=is CharacterOffsetBegin=269 CharacterOffsetEnd=271 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O SentimentClass=Neutral]
+[Text=n't CharacterOffsetBegin=271 CharacterOffsetEnd=274 PartOfSpeech=RB Lemma=not NamedEntityTag=O SentimentClass=Neutral]
+[Text=huge CharacterOffsetBegin=275 CharacterOffsetEnd=279 PartOfSpeech=JJ Lemma=huge NamedEntityTag=O SentimentClass=Neutral]
+[Text=but CharacterOffsetBegin=280 CharacterOffsetEnd=283 PartOfSpeech=CC Lemma=but NamedEntityTag=O SentimentClass=Neutral]
+[Text=that CharacterOffsetBegin=284 CharacterOffsetEnd=288 PartOfSpeech=DT Lemma=that NamedEntityTag=O SentimentClass=Neutral]
+[Text='s CharacterOffsetBegin=288 CharacterOffsetEnd=290 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O SentimentClass=Neutral]
+[Text=a CharacterOffsetBegin=291 CharacterOffsetEnd=292 PartOfSpeech=DT Lemma=a NamedEntityTag=O SentimentClass=Neutral]
+[Text=good CharacterOffsetBegin=293 CharacterOffsetEnd=297 PartOfSpeech=JJ Lemma=good NamedEntityTag=O SentimentClass=Positive]
+[Text=thing CharacterOffsetBegin=298 CharacterOffsetEnd=303 PartOfSpeech=NN Lemma=thing NamedEntityTag=O SentimentClass=Neutral]
+[Text=! CharacterOffsetBegin=303 CharacterOffsetEnd=304 PartOfSpeech=. Lemma=! NamedEntityTag=O SentimentClass=Neutral]
+
+Constituency parse: 
+(ROOT
+  (S
+    (S
+      (NP (DT The) (NN menu))
+      (VP (VBZ is) (RB n't)
+        (ADJP (JJ huge))))
+    (CC but)
+    (S
+      (NP (DT that))
+      (VP (VBZ 's)
+        (NP (DT a) (JJ good) (NN thing))))
+    (. !)))
+
+
+Sentiment-annotated binary tree:
+(ROOT|sentiment=3|prob=0.788
+  (@S|sentiment=3|prob=0.648
+    (@S|sentiment=2|prob=0.726
+      (S|sentiment=2|prob=0.554
+        (NP|sentiment=2|prob=0.987 (DT|sentiment=2|prob=0.993 The) (NN|sentiment=2|prob=0.947 menu))
+        (VP|sentiment=2|prob=0.568
+          (@VP|sentiment=1|prob=0.784 (VBZ|sentiment=2|prob=0.989 is) (RB|sentiment=2|prob=0.994 n't))
+          (ADJP|sentiment=2|prob=0.988 huge)))
+      (CC|sentiment=2|prob=0.990 but))
+    (S|sentiment=3|prob=0.725 (NP|sentiment=2|prob=0.991 that)
+      (VP|sentiment=3|prob=0.715 (VBZ|sentiment=2|prob=0.994 's)
+        (NP|sentiment=3|prob=0.761 (DT|sentiment=2|prob=0.990 a)
+          (@NP|sentiment=3|prob=0.797 (JJ|sentiment=3|prob=0.987 good) (NN|sentiment=2|prob=0.996 thing))))))
+  (.|sentiment=2|prob=0.999 !))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, huge-5)
+det(menu-2, The-1)
+nsubj(huge-5, menu-2)
+cop(huge-5, is-3)
+neg(huge-5, n't-4)
+cc(huge-5, but-6)
+nsubj(thing-11, that-7)
+cop(thing-11, 's-8)
+det(thing-11, a-9)
+amod(thing-11, good-10)
+conj:but(huge-5, thing-11)
+punct(huge-5, !-12)
+
+Extracted the following NER entity mentions:
+
+Sentence #7 (12 tokens, sentiment: Negative):
+The people sitting around us were regulars and echoed the same.
+
+Tokens:
+[Text=The CharacterOffsetBegin=305 CharacterOffsetEnd=308 PartOfSpeech=DT Lemma=the NamedEntityTag=O SentimentClass=Neutral]
+[Text=people CharacterOffsetBegin=309 CharacterOffsetEnd=315 PartOfSpeech=NNS Lemma=people NamedEntityTag=O SentimentClass=Neutral]
+[Text=sitting CharacterOffsetBegin=316 CharacterOffsetEnd=323 PartOfSpeech=VBG Lemma=sit NamedEntityTag=O SentimentClass=Neutral]
+[Text=around CharacterOffsetBegin=324 CharacterOffsetEnd=330 PartOfSpeech=IN Lemma=around NamedEntityTag=O SentimentClass=Neutral]
+[Text=us CharacterOffsetBegin=331 CharacterOffsetEnd=333 PartOfSpeech=PRP Lemma=we NamedEntityTag=O SentimentClass=Positive]
+[Text=were CharacterOffsetBegin=334 CharacterOffsetEnd=338 PartOfSpeech=VBD Lemma=be NamedEntityTag=O SentimentClass=Neutral]
+[Text=regulars CharacterOffsetBegin=339 CharacterOffsetEnd=347 PartOfSpeech=NNS Lemma=regular NamedEntityTag=O SentimentClass=Neutral]
+[Text=and CharacterOffsetBegin=348 CharacterOffsetEnd=351 PartOfSpeech=CC Lemma=and NamedEntityTag=O SentimentClass=Neutral]
+[Text=echoed CharacterOffsetBegin=352 CharacterOffsetEnd=358 PartOfSpeech=VBD Lemma=echo NamedEntityTag=O SentimentClass=Neutral]
+[Text=the CharacterOffsetBegin=359 CharacterOffsetEnd=362 PartOfSpeech=DT Lemma=the NamedEntityTag=O SentimentClass=Neutral]
+[Text=same CharacterOffsetBegin=363 CharacterOffsetEnd=367 PartOfSpeech=JJ Lemma=same NamedEntityTag=O SentimentClass=Neutral]
+[Text=. CharacterOffsetBegin=367 CharacterOffsetEnd=368 PartOfSpeech=. Lemma=. NamedEntityTag=O SentimentClass=Neutral]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNS people))
+      (VP (VBG sitting)
+        (PP (IN around)
+          (NP (PRP us)))))
+    (VP
+      (VP (VBD were)
+        (NP (NNS regulars)))
+      (CC and)
+      (VP (VBD echoed)
+        (NP (DT the) (JJ same))))
+    (. .)))
+
+
+Sentiment-annotated binary tree:
+(ROOT|sentiment=1|prob=0.553
+  (NP|sentiment=2|prob=0.696
+    (NP|sentiment=2|prob=0.973 (DT|sentiment=2|prob=0.993 The) (NNS|sentiment=2|prob=0.997 people))
+    (VP|sentiment=2|prob=0.721 (VBG|sentiment=2|prob=0.990 sitting)
+      (PP|sentiment=2|prob=0.898 (IN|sentiment=2|prob=0.997 around) (NP|sentiment=3|prob=0.982 us))))
+  (@S|sentiment=2|prob=0.688
+    (VP|sentiment=2|prob=0.775
+      (@VP|sentiment=2|prob=0.851
+        (VP|sentiment=2|prob=0.825 (VBD|sentiment=2|prob=0.992 were) (NP|sentiment=2|prob=0.631 regulars))
+        (CC|sentiment=2|prob=0.996 and))
+      (VP|sentiment=2|prob=0.881 (VBD|sentiment=2|prob=0.631 echoed)
+        (NP|sentiment=2|prob=0.948 (DT|sentiment=2|prob=0.994 the) (JJ|sentiment=2|prob=0.994 same))))
+    (.|sentiment=2|prob=0.997 .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, regulars-7)
+det(people-2, The-1)
+nsubj(regulars-7, people-2)
+nsubj(echoed-9, people-2)
+acl(people-2, sitting-3)
+case(us-5, around-4)
+nmod:around(sitting-3, us-5)
+cop(regulars-7, were-6)
+cc(regulars-7, and-8)
+conj:and(regulars-7, echoed-9)
+det(same-11, the-10)
+dobj(echoed-9, same-11)
+punct(regulars-7, .-12)
+
+Extracted the following NER entity mentions:
+
+Sentence #8 (5 tokens, sentiment: Positive):
+We will definitely return.
+
+Tokens:
+[Text=We CharacterOffsetBegin=369 CharacterOffsetEnd=371 PartOfSpeech=PRP Lemma=we NamedEntityTag=O SentimentClass=Neutral]
+[Text=will CharacterOffsetBegin=372 CharacterOffsetEnd=376 PartOfSpeech=MD Lemma=will NamedEntityTag=O SentimentClass=Neutral]
+[Text=definitely CharacterOffsetBegin=377 CharacterOffsetEnd=387 PartOfSpeech=RB Lemma=definitely NamedEntityTag=O SentimentClass=Positive]
+[Text=return CharacterOffsetBegin=388 CharacterOffsetEnd=394 PartOfSpeech=VB Lemma=return NamedEntityTag=O SentimentClass=Neutral]
+[Text=. CharacterOffsetBegin=394 CharacterOffsetEnd=395 PartOfSpeech=. Lemma=. NamedEntityTag=O SentimentClass=Neutral]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (MD will)
+      (ADVP (RB definitely))
+      (VP (VB return)))
+    (. .)))
+
+
+Sentiment-annotated binary tree:
+(ROOT|sentiment=3|prob=0.443 (NP|sentiment=2|prob=0.992 We)
+  (@S|sentiment=3|prob=0.694
+    (VP|sentiment=3|prob=0.615
+      (@VP|sentiment=2|prob=0.855 (MD|sentiment=2|prob=0.995 will) (ADVP|sentiment=3|prob=0.933 definitely))
+      (VP|sentiment=2|prob=0.937 return))
+    (.|sentiment=2|prob=0.997 .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, return-4)
+nsubj(return-4, We-1)
+aux(return-4, will-2)
+advmod(return-4, definitely-3)
+punct(return-4, .-5)
+
+Extracted the following NER entity mentions:
+
+Coreference set:
+	(2,13,[13,14]) -> (2,1,[1,2]), that is: "we" -> "We"
+	(5,1,[1,2]) -> (2,1,[1,2]), that is: "We" -> "We"
+	(7,5,[5,6]) -> (2,1,[1,2]), that is: "us" -> "We"
+	(8,1,[1,2]) -> (2,1,[1,2]), that is: "We" -> "We"
+
+Coreference set:
+	(6,2,[1,3]) -> (6,11,[9,12]), that is: "The menu" -> "a good thing"
+	(6,7,[7,8]) -> (6,11,[9,12]), that is: "that" -> "a good thing"

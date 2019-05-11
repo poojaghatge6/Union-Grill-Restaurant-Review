@@ -1,0 +1,156 @@
+
+Sentence #1 (3 tokens, sentiment: Negative):
+Bad service!!
+
+Tokens:
+[Text=Bad CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=JJ Lemma=bad NamedEntityTag=O SentimentClass=Very negative]
+[Text=service CharacterOffsetBegin=4 CharacterOffsetEnd=11 PartOfSpeech=NN Lemma=service NamedEntityTag=O SentimentClass=Neutral]
+[Text=!! CharacterOffsetBegin=11 CharacterOffsetEnd=13 PartOfSpeech=. Lemma=!! NamedEntityTag=O SentimentClass=Neutral]
+
+Constituency parse: 
+(ROOT
+  (NP (JJ Bad) (NN service) (. !!)))
+
+
+Sentiment-annotated binary tree:
+(ROOT|sentiment=1|prob=0.439 (JJ|sentiment=0|prob=0.486 Bad)
+  (@NP|sentiment=2|prob=0.631 (NN|sentiment=2|prob=0.986 service) (.|sentiment=2|prob=0.631 !!)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, service-2)
+amod(service-2, Bad-1)
+punct(service-2, !!-3)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (8 tokens, sentiment: Neutral):
+Take to long to have our food.
+
+Tokens:
+[Text=Take CharacterOffsetBegin=14 CharacterOffsetEnd=18 PartOfSpeech=VB Lemma=take NamedEntityTag=O SentimentClass=Neutral]
+[Text=to CharacterOffsetBegin=19 CharacterOffsetEnd=21 PartOfSpeech=TO Lemma=to NamedEntityTag=O SentimentClass=Neutral]
+[Text=long CharacterOffsetBegin=22 CharacterOffsetEnd=26 PartOfSpeech=JJ Lemma=long NamedEntityTag=O SentimentClass=Neutral]
+[Text=to CharacterOffsetBegin=27 CharacterOffsetEnd=29 PartOfSpeech=TO Lemma=to NamedEntityTag=O SentimentClass=Neutral]
+[Text=have CharacterOffsetBegin=30 CharacterOffsetEnd=34 PartOfSpeech=VB Lemma=have NamedEntityTag=O SentimentClass=Neutral]
+[Text=our CharacterOffsetBegin=35 CharacterOffsetEnd=38 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O SentimentClass=Neutral]
+[Text=food CharacterOffsetBegin=39 CharacterOffsetEnd=43 PartOfSpeech=NN Lemma=food NamedEntityTag=O SentimentClass=Neutral]
+[Text=. CharacterOffsetBegin=43 CharacterOffsetEnd=44 PartOfSpeech=. Lemma=. NamedEntityTag=O SentimentClass=Neutral]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VB Take)
+      (PP (TO to)
+        (ADJP (JJ long)))
+      (S
+        (VP (TO to)
+          (VP (VB have)
+            (NP (PRP$ our) (NN food))))))
+    (. .)))
+
+
+Sentiment-annotated binary tree:
+(ROOT|sentiment=2|prob=0.540
+  (VP|sentiment=2|prob=0.589
+    (@VP|sentiment=2|prob=0.933 (VB|sentiment=2|prob=0.988 Take)
+      (PP|sentiment=2|prob=0.932 (TO|sentiment=2|prob=0.990 to) (ADJP|sentiment=2|prob=0.993 long)))
+    (S|sentiment=2|prob=0.843 (TO|sentiment=2|prob=0.990 to)
+      (VP|sentiment=2|prob=0.850 (VB|sentiment=2|prob=0.991 have)
+        (NP|sentiment=2|prob=0.981 (PRP$|sentiment=2|prob=0.996 our) (NN|sentiment=2|prob=0.993 food)))))
+  (.|sentiment=2|prob=0.997 .))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Take-1)
+case(long-3, to-2)
+advcl:to(Take-1, long-3)
+mark(have-5, to-4)
+xcomp(Take-1, have-5)
+nmod:poss(food-7, our-6)
+dobj(have-5, food-7)
+punct(Take-1, .-8)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (14 tokens, sentiment: Negative):
+We ask for a beer and take like 10 min to have it.
+
+Tokens:
+[Text=We CharacterOffsetBegin=45 CharacterOffsetEnd=47 PartOfSpeech=PRP Lemma=we NamedEntityTag=O SentimentClass=Neutral]
+[Text=ask CharacterOffsetBegin=48 CharacterOffsetEnd=51 PartOfSpeech=VBP Lemma=ask NamedEntityTag=O SentimentClass=Neutral]
+[Text=for CharacterOffsetBegin=52 CharacterOffsetEnd=55 PartOfSpeech=IN Lemma=for NamedEntityTag=O SentimentClass=Neutral]
+[Text=a CharacterOffsetBegin=56 CharacterOffsetEnd=57 PartOfSpeech=DT Lemma=a NamedEntityTag=O SentimentClass=Neutral]
+[Text=beer CharacterOffsetBegin=58 CharacterOffsetEnd=62 PartOfSpeech=NN Lemma=beer NamedEntityTag=O SentimentClass=Neutral]
+[Text=and CharacterOffsetBegin=63 CharacterOffsetEnd=66 PartOfSpeech=CC Lemma=and NamedEntityTag=O SentimentClass=Neutral]
+[Text=take CharacterOffsetBegin=67 CharacterOffsetEnd=71 PartOfSpeech=VB Lemma=take NamedEntityTag=O SentimentClass=Neutral]
+[Text=like CharacterOffsetBegin=72 CharacterOffsetEnd=76 PartOfSpeech=JJ Lemma=like NamedEntityTag=O SentimentClass=Neutral]
+[Text=10 CharacterOffsetBegin=77 CharacterOffsetEnd=79 PartOfSpeech=CD Lemma=10 NamedEntityTag=DURATION NormalizedNamedEntityTag=PT10M Timex=<TIMEX3 tid="t1" type="DURATION" value="PT10M">10 min</TIMEX3> SentimentClass=Positive]
+[Text=min CharacterOffsetBegin=80 CharacterOffsetEnd=83 PartOfSpeech=NN Lemma=min NamedEntityTag=DURATION NormalizedNamedEntityTag=PT10M Timex=<TIMEX3 tid="t1" type="DURATION" value="PT10M">10 min</TIMEX3> SentimentClass=Neutral]
+[Text=to CharacterOffsetBegin=84 CharacterOffsetEnd=86 PartOfSpeech=TO Lemma=to NamedEntityTag=O SentimentClass=Neutral]
+[Text=have CharacterOffsetBegin=87 CharacterOffsetEnd=91 PartOfSpeech=VB Lemma=have NamedEntityTag=O SentimentClass=Neutral]
+[Text=it CharacterOffsetBegin=92 CharacterOffsetEnd=94 PartOfSpeech=PRP Lemma=it NamedEntityTag=O SentimentClass=Neutral]
+[Text=. CharacterOffsetBegin=94 CharacterOffsetEnd=95 PartOfSpeech=. Lemma=. NamedEntityTag=O SentimentClass=Neutral]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP
+      (VP (VBP ask)
+        (PP (IN for)
+          (NP (DT a) (NN beer))))
+      (CC and)
+      (VP (VB take)
+        (S
+          (NP (JJ like) (CD 10) (NN min))
+          (VP (TO to)
+            (VP (VB have)
+              (NP (PRP it)))))))
+    (. .)))
+
+
+Sentiment-annotated binary tree:
+(ROOT|sentiment=1|prob=0.639 (NP|sentiment=2|prob=0.992 We)
+  (@S|sentiment=2|prob=0.528
+    (VP|sentiment=2|prob=0.601
+      (@VP|sentiment=2|prob=0.896
+        (VP|sentiment=2|prob=0.906 (VBP|sentiment=2|prob=0.974 ask)
+          (PP|sentiment=2|prob=0.842 (IN|sentiment=2|prob=0.992 for)
+            (NP|sentiment=2|prob=0.916 (DT|sentiment=2|prob=0.990 a) (NN|sentiment=2|prob=0.949 beer))))
+        (CC|sentiment=2|prob=0.996 and))
+      (VP|sentiment=2|prob=0.734 (VB|sentiment=2|prob=0.994 take)
+        (S|sentiment=2|prob=0.578
+          (NP|sentiment=2|prob=0.696 (JJ|sentiment=2|prob=0.995 like)
+            (@NP|sentiment=2|prob=0.849 (CD|sentiment=3|prob=0.914 10) (NN|sentiment=2|prob=0.631 min)))
+          (VP|sentiment=2|prob=0.888 (TO|sentiment=2|prob=0.990 to)
+            (VP|sentiment=2|prob=0.886 (VB|sentiment=2|prob=0.991 have) (NP|sentiment=2|prob=0.993 it))))))
+    (.|sentiment=2|prob=0.997 .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, ask-2)
+nsubj(ask-2, We-1)
+nsubj(take-7, We-1)
+case(beer-5, for-3)
+det(beer-5, a-4)
+nmod:for(ask-2, beer-5)
+cc(ask-2, and-6)
+conj:and(ask-2, take-7)
+amod(min-10, like-8)
+nummod(min-10, 10-9)
+dobj(take-7, min-10)
+nsubj:xsubj(have-12, min-10)
+mark(have-12, to-11)
+xcomp(take-7, have-12)
+dobj(have-12, it-13)
+punct(ask-2, .-14)
+
+Extracted the following NER entity mentions:
+10 min	DURATION
+
+Coreference set:
+	(3,1,[1,2]) -> (2,6,[6,7]), that is: "We" -> "our"
+
+Coreference set:
+	(3,13,[13,14]) -> (3,5,[4,6]), that is: "it" -> "a beer"

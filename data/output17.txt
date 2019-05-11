@@ -1,0 +1,223 @@
+
+Sentence #1 (18 tokens, sentiment: Neutral):
+Large salad (be warned - there are a lot of onions on the Greek Salad.)
+
+Tokens:
+[Text=Large CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=JJ Lemma=large NamedEntityTag=O SentimentClass=Neutral]
+[Text=salad CharacterOffsetBegin=6 CharacterOffsetEnd=11 PartOfSpeech=NN Lemma=salad NamedEntityTag=O SentimentClass=Neutral]
+[Text=-LRB- CharacterOffsetBegin=12 CharacterOffsetEnd=13 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O SentimentClass=Neutral]
+[Text=be CharacterOffsetBegin=13 CharacterOffsetEnd=15 PartOfSpeech=VB Lemma=be NamedEntityTag=O SentimentClass=Neutral]
+[Text=warned CharacterOffsetBegin=16 CharacterOffsetEnd=22 PartOfSpeech=VBN Lemma=warn NamedEntityTag=O SentimentClass=Negative]
+[Text=- CharacterOffsetBegin=23 CharacterOffsetEnd=24 PartOfSpeech=: Lemma=- NamedEntityTag=O SentimentClass=Neutral]
+[Text=there CharacterOffsetBegin=25 CharacterOffsetEnd=30 PartOfSpeech=EX Lemma=there NamedEntityTag=O SentimentClass=Neutral]
+[Text=are CharacterOffsetBegin=31 CharacterOffsetEnd=34 PartOfSpeech=VBP Lemma=be NamedEntityTag=O SentimentClass=Neutral]
+[Text=a CharacterOffsetBegin=35 CharacterOffsetEnd=36 PartOfSpeech=DT Lemma=a NamedEntityTag=O SentimentClass=Neutral]
+[Text=lot CharacterOffsetBegin=37 CharacterOffsetEnd=40 PartOfSpeech=NN Lemma=lot NamedEntityTag=O SentimentClass=Neutral]
+[Text=of CharacterOffsetBegin=41 CharacterOffsetEnd=43 PartOfSpeech=IN Lemma=of NamedEntityTag=O SentimentClass=Neutral]
+[Text=onions CharacterOffsetBegin=44 CharacterOffsetEnd=50 PartOfSpeech=NNS Lemma=onion NamedEntityTag=O SentimentClass=Neutral]
+[Text=on CharacterOffsetBegin=51 CharacterOffsetEnd=53 PartOfSpeech=IN Lemma=on NamedEntityTag=O SentimentClass=Neutral]
+[Text=the CharacterOffsetBegin=54 CharacterOffsetEnd=57 PartOfSpeech=DT Lemma=the NamedEntityTag=O SentimentClass=Neutral]
+[Text=Greek CharacterOffsetBegin=58 CharacterOffsetEnd=63 PartOfSpeech=JJ Lemma=greek NamedEntityTag=NATIONALITY SentimentClass=Neutral]
+[Text=Salad CharacterOffsetBegin=64 CharacterOffsetEnd=69 PartOfSpeech=NN Lemma=salad NamedEntityTag=O SentimentClass=Neutral]
+[Text=. CharacterOffsetBegin=69 CharacterOffsetEnd=70 PartOfSpeech=. Lemma=. NamedEntityTag=O SentimentClass=Neutral]
+[Text=-RRB- CharacterOffsetBegin=70 CharacterOffsetEnd=71 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O SentimentClass=Neutral]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP
+      (NP (JJ Large))
+      (ADJP
+        (ADJP (NN salad))
+        (PRN (-LRB- -LRB-)
+          (S
+            (VP (VB be)
+              (VP (VBN warned)
+                (UCP (: -)
+                  (S
+                    (NP (EX there))
+                    (VP (VBP are)
+                      (NP
+                        (NP (DT a) (NN lot))
+                        (PP (IN of)
+                          (NP
+                            (NP (NNS onions))
+                            (PP (IN on)
+                              (NP (DT the) (JJ Greek) (NN Salad))))))))
+                  (. .)))))
+          (-RRB- -RRB-))))))
+
+
+Sentiment-annotated binary tree:
+(ROOT|sentiment=2|prob=0.518 (NP|sentiment=2|prob=0.945 Large)
+  (ADJP|sentiment=2|prob=0.483 (ADJP|sentiment=2|prob=0.631 salad)
+    (PRN|sentiment=2|prob=0.465 (-LRB-|sentiment=2|prob=0.634 -LRB-)
+      (@PRN|sentiment=2|prob=0.607
+        (S|sentiment=1|prob=0.490 (VB|sentiment=2|prob=0.994 be)
+          (VP|sentiment=1|prob=0.505 (VBN|sentiment=1|prob=0.635 warned)
+            (UCP|sentiment=2|prob=0.518 (:|sentiment=2|prob=0.996 -)
+              (@UCP|sentiment=2|prob=0.401
+                (S|sentiment=3|prob=0.401 (NP|sentiment=2|prob=0.996 there)
+                  (VP|sentiment=2|prob=0.505 (VBP|sentiment=2|prob=0.992 are)
+                    (NP|sentiment=3|prob=0.455
+                      (NP|sentiment=2|prob=0.993 (DT|sentiment=2|prob=0.990 a) (NN|sentiment=2|prob=0.997 lot))
+                      (PP|sentiment=2|prob=0.779 (IN|sentiment=2|prob=0.993 of)
+                        (NP|sentiment=2|prob=0.658 (NP|sentiment=2|prob=0.631 onions)
+                          (PP|sentiment=2|prob=0.959 (IN|sentiment=2|prob=0.994 on)
+                            (NP|sentiment=2|prob=0.942 (DT|sentiment=2|prob=0.994 the)
+                              (@NP|sentiment=2|prob=0.952 (JJ|sentiment=2|prob=0.996 Greek) (NN|sentiment=2|prob=0.631 Salad)))))))))
+                (.|sentiment=2|prob=0.997 .)))))
+        (-RRB-|sentiment=2|prob=0.720 -RRB-)))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Large-1)
+amod(Large-1, salad-2)
+punct(warned-5, -LRB--3)
+auxpass(warned-5, be-4)
+dep(salad-2, warned-5)
+punct(are-8, --6)
+expl(are-8, there-7)
+dep(warned-5, are-8)
+det:qmod(onions-12, a-9)
+mwe(a-9, lot-10)
+mwe(a-9, of-11)
+nsubj(are-8, onions-12)
+case(Salad-16, on-13)
+det(Salad-16, the-14)
+amod(Salad-16, Greek-15)
+nmod:on(onions-12, Salad-16)
+punct(are-8, .-17)
+punct(warned-5, -RRB--18)
+
+Extracted the following NER entity mentions:
+Greek	NATIONALITY
+
+Sentence #2 (7 tokens, sentiment: Positive):
+Good nachos and great waffle fries.
+
+Tokens:
+[Text=Good CharacterOffsetBegin=73 CharacterOffsetEnd=77 PartOfSpeech=JJ Lemma=good NamedEntityTag=O SentimentClass=Positive]
+[Text=nachos CharacterOffsetBegin=78 CharacterOffsetEnd=84 PartOfSpeech=NNS Lemma=nacho NamedEntityTag=O SentimentClass=Neutral]
+[Text=and CharacterOffsetBegin=85 CharacterOffsetEnd=88 PartOfSpeech=CC Lemma=and NamedEntityTag=O SentimentClass=Neutral]
+[Text=great CharacterOffsetBegin=89 CharacterOffsetEnd=94 PartOfSpeech=JJ Lemma=great NamedEntityTag=O SentimentClass=Very positive]
+[Text=waffle CharacterOffsetBegin=95 CharacterOffsetEnd=101 PartOfSpeech=NN Lemma=waffle NamedEntityTag=O SentimentClass=Neutral]
+[Text=fries CharacterOffsetBegin=102 CharacterOffsetEnd=107 PartOfSpeech=NNS Lemma=fries NamedEntityTag=O SentimentClass=Neutral]
+[Text=. CharacterOffsetBegin=107 CharacterOffsetEnd=108 PartOfSpeech=. Lemma=. NamedEntityTag=O SentimentClass=Neutral]
+
+Constituency parse: 
+(ROOT
+  (NP
+    (NP
+      (NP (JJ Good) (NNS nachos))
+      (CC and)
+      (NP (JJ great) (NN waffle) (NNS fries)))
+    (. .)))
+
+
+Sentiment-annotated binary tree:
+(ROOT|sentiment=3|prob=0.703
+  (NP|sentiment=3|prob=0.635
+    (@NP|sentiment=3|prob=0.524
+      (NP|sentiment=3|prob=0.457 (JJ|sentiment=3|prob=0.930 Good) (NNS|sentiment=2|prob=0.631 nachos))
+      (CC|sentiment=2|prob=0.996 and))
+    (NP|sentiment=3|prob=0.540 (JJ|sentiment=4|prob=0.908 great)
+      (@NP|sentiment=2|prob=0.607 (NN|sentiment=2|prob=0.941 waffle) (NNS|sentiment=2|prob=0.631 fries))))
+  (.|sentiment=2|prob=0.997 .))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, nachos-2)
+amod(nachos-2, Good-1)
+cc(nachos-2, and-3)
+amod(fries-6, great-4)
+compound(fries-6, waffle-5)
+conj:and(nachos-2, fries-6)
+punct(nachos-2, .-7)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (7 tokens, sentiment: Positive):
+The waiter was friendly and attentive.
+
+Tokens:
+[Text=The CharacterOffsetBegin=110 CharacterOffsetEnd=113 PartOfSpeech=DT Lemma=the NamedEntityTag=O SentimentClass=Neutral]
+[Text=waiter CharacterOffsetBegin=114 CharacterOffsetEnd=120 PartOfSpeech=NN Lemma=waiter NamedEntityTag=TITLE SentimentClass=Neutral]
+[Text=was CharacterOffsetBegin=121 CharacterOffsetEnd=124 PartOfSpeech=VBD Lemma=be NamedEntityTag=O SentimentClass=Neutral]
+[Text=friendly CharacterOffsetBegin=125 CharacterOffsetEnd=133 PartOfSpeech=JJ Lemma=friendly NamedEntityTag=O SentimentClass=Positive]
+[Text=and CharacterOffsetBegin=134 CharacterOffsetEnd=137 PartOfSpeech=CC Lemma=and NamedEntityTag=O SentimentClass=Neutral]
+[Text=attentive CharacterOffsetBegin=138 CharacterOffsetEnd=147 PartOfSpeech=JJ Lemma=attentive NamedEntityTag=O SentimentClass=Positive]
+[Text=. CharacterOffsetBegin=147 CharacterOffsetEnd=148 PartOfSpeech=. Lemma=. NamedEntityTag=O SentimentClass=Neutral]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (NN waiter))
+    (VP (VBD was)
+      (ADJP (JJ friendly)
+        (CC and)
+        (JJ attentive)))
+    (. .)))
+
+
+Sentiment-annotated binary tree:
+(ROOT|sentiment=3|prob=0.563
+  (NP|sentiment=2|prob=0.849 (DT|sentiment=2|prob=0.993 The) (NN|sentiment=2|prob=0.631 waiter))
+  (@S|sentiment=3|prob=0.625
+    (VP|sentiment=3|prob=0.608 (VBD|sentiment=2|prob=0.996 was)
+      (ADJP|sentiment=3|prob=0.610
+        (@ADJP|sentiment=3|prob=0.595 (JJ|sentiment=3|prob=0.661 friendly)
+          (CC|sentiment=2|prob=0.996 and))
+        (JJ|sentiment=3|prob=0.595 attentive)))
+    (.|sentiment=2|prob=0.997 .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, friendly-4)
+det(waiter-2, The-1)
+nsubj(friendly-4, waiter-2)
+nsubj(attentive-6, waiter-2)
+cop(friendly-4, was-3)
+cc(friendly-4, and-5)
+conj:and(friendly-4, attentive-6)
+punct(friendly-4, .-7)
+
+Extracted the following NER entity mentions:
+waiter	TITLE
+
+Sentence #4 (5 tokens, sentiment: Negative):
+We will be back.
+
+Tokens:
+[Text=We CharacterOffsetBegin=150 CharacterOffsetEnd=152 PartOfSpeech=PRP Lemma=we NamedEntityTag=O SentimentClass=Neutral]
+[Text=will CharacterOffsetBegin=153 CharacterOffsetEnd=157 PartOfSpeech=MD Lemma=will NamedEntityTag=O SentimentClass=Neutral]
+[Text=be CharacterOffsetBegin=158 CharacterOffsetEnd=160 PartOfSpeech=VB Lemma=be NamedEntityTag=O SentimentClass=Neutral]
+[Text=back CharacterOffsetBegin=161 CharacterOffsetEnd=165 PartOfSpeech=RB Lemma=back NamedEntityTag=O SentimentClass=Neutral]
+[Text=. CharacterOffsetBegin=165 CharacterOffsetEnd=166 PartOfSpeech=. Lemma=. NamedEntityTag=O SentimentClass=Neutral]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (MD will)
+      (VP (VB be)
+        (ADVP (RB back))))
+    (. .)))
+
+
+Sentiment-annotated binary tree:
+(ROOT|sentiment=1|prob=0.433 (NP|sentiment=2|prob=0.992 We)
+  (@S|sentiment=2|prob=0.503
+    (VP|sentiment=2|prob=0.704 (MD|sentiment=2|prob=0.995 will)
+      (VP|sentiment=2|prob=0.867 (VB|sentiment=2|prob=0.994 be) (ADVP|sentiment=2|prob=0.997 back)))
+    (.|sentiment=2|prob=0.997 .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, be-3)
+nsubj(be-3, We-1)
+aux(be-3, will-2)
+advmod(be-3, back-4)
+punct(be-3, .-5)
+
+Extracted the following NER entity mentions:

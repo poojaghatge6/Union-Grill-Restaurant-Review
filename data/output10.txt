@@ -1,0 +1,162 @@
+
+Sentence #1 (8 tokens, sentiment: Neutral):
+Have to get the homemade chicken fingers.
+
+Tokens:
+[Text=Have CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=VBP Lemma=have NamedEntityTag=O SentimentClass=Neutral]
+[Text=to CharacterOffsetBegin=5 CharacterOffsetEnd=7 PartOfSpeech=TO Lemma=to NamedEntityTag=O SentimentClass=Neutral]
+[Text=get CharacterOffsetBegin=8 CharacterOffsetEnd=11 PartOfSpeech=VB Lemma=get NamedEntityTag=O SentimentClass=Neutral]
+[Text=the CharacterOffsetBegin=12 CharacterOffsetEnd=15 PartOfSpeech=DT Lemma=the NamedEntityTag=O SentimentClass=Neutral]
+[Text=homemade CharacterOffsetBegin=16 CharacterOffsetEnd=24 PartOfSpeech=NN Lemma=homemade NamedEntityTag=O SentimentClass=Neutral]
+[Text=chicken CharacterOffsetBegin=25 CharacterOffsetEnd=32 PartOfSpeech=NN Lemma=chicken NamedEntityTag=O SentimentClass=Neutral]
+[Text=fingers CharacterOffsetBegin=33 CharacterOffsetEnd=40 PartOfSpeech=NNS Lemma=finger NamedEntityTag=O SentimentClass=Neutral]
+[Text=. CharacterOffsetBegin=40 CharacterOffsetEnd=41 PartOfSpeech=. Lemma=. NamedEntityTag=O SentimentClass=Neutral]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VBP Have)
+      (S
+        (VP (TO to)
+          (VP (VB get)
+            (NP (DT the) (NN homemade) (NN chicken) (NNS fingers))))))
+    (. .)))
+
+
+Sentiment-annotated binary tree:
+(ROOT|sentiment=2|prob=0.835
+  (VP|sentiment=2|prob=0.925 (VBP|sentiment=2|prob=0.991 Have)
+    (S|sentiment=2|prob=0.775 (TO|sentiment=2|prob=0.990 to)
+      (VP|sentiment=2|prob=0.665 (VB|sentiment=2|prob=0.994 get)
+        (NP|sentiment=2|prob=0.765 (DT|sentiment=2|prob=0.994 the)
+          (@NP|sentiment=2|prob=0.671 (NN|sentiment=2|prob=0.631 homemade)
+            (@NP|sentiment=2|prob=0.756 (NN|sentiment=2|prob=0.791 chicken) (NNS|sentiment=2|prob=0.977 fingers)))))))
+  (.|sentiment=2|prob=0.997 .))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Have-1)
+mark(get-3, to-2)
+xcomp(Have-1, get-3)
+det(fingers-7, the-4)
+compound(fingers-7, homemade-5)
+compound(fingers-7, chicken-6)
+dobj(get-3, fingers-7)
+punct(Have-1, .-8)
+
+Extracted the following NER entity mentions:
+
+Sentence #2 (4 tokens, sentiment: Negative):
+Burgers good too.
+
+Tokens:
+[Text=Burgers CharacterOffsetBegin=43 CharacterOffsetEnd=50 PartOfSpeech=NNS Lemma=burger NamedEntityTag=O SentimentClass=Neutral]
+[Text=good CharacterOffsetBegin=51 CharacterOffsetEnd=55 PartOfSpeech=JJ Lemma=good NamedEntityTag=O SentimentClass=Positive]
+[Text=too CharacterOffsetBegin=56 CharacterOffsetEnd=59 PartOfSpeech=RB Lemma=too NamedEntityTag=O SentimentClass=Neutral]
+[Text=. CharacterOffsetBegin=59 CharacterOffsetEnd=60 PartOfSpeech=. Lemma=. NamedEntityTag=O SentimentClass=Neutral]
+
+Constituency parse: 
+(ROOT
+  (FRAG
+    (NP (NNS Burgers))
+    (ADJP (JJ good))
+    (ADVP (RB too))
+    (. .)))
+
+
+Sentiment-annotated binary tree:
+(ROOT|sentiment=1|prob=0.402 (NP|sentiment=2|prob=0.631 Burgers)
+  (@FRAG|sentiment=1|prob=0.361 (ADJP|sentiment=3|prob=0.987 good)
+    (@FRAG|sentiment=1|prob=0.765 (ADVP|sentiment=2|prob=0.994 too) (.|sentiment=2|prob=0.997 .))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, Burgers-1)
+dep(Burgers-1, good-2)
+dep(Burgers-1, too-3)
+punct(Burgers-1, .-4)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (6 tokens, sentiment: Negative):
+Good priced beer and wine.
+
+Tokens:
+[Text=Good CharacterOffsetBegin=62 CharacterOffsetEnd=66 PartOfSpeech=JJ Lemma=good NamedEntityTag=O SentimentClass=Positive]
+[Text=priced CharacterOffsetBegin=67 CharacterOffsetEnd=73 PartOfSpeech=VBN Lemma=price NamedEntityTag=O SentimentClass=Neutral]
+[Text=beer CharacterOffsetBegin=74 CharacterOffsetEnd=78 PartOfSpeech=NN Lemma=beer NamedEntityTag=O SentimentClass=Neutral]
+[Text=and CharacterOffsetBegin=79 CharacterOffsetEnd=82 PartOfSpeech=CC Lemma=and NamedEntityTag=O SentimentClass=Neutral]
+[Text=wine CharacterOffsetBegin=83 CharacterOffsetEnd=87 PartOfSpeech=NN Lemma=wine NamedEntityTag=O SentimentClass=Neutral]
+[Text=. CharacterOffsetBegin=87 CharacterOffsetEnd=88 PartOfSpeech=. Lemma=. NamedEntityTag=O SentimentClass=Neutral]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (JJ Good))
+    (VP (VBN priced)
+      (NP (NN beer)
+        (CC and)
+        (NN wine)))
+    (. .)))
+
+
+Sentiment-annotated binary tree:
+(ROOT|sentiment=1|prob=0.332 (NP|sentiment=3|prob=0.930 Good)
+  (@S|sentiment=1|prob=0.403
+    (VP|sentiment=2|prob=0.369 (VBN|sentiment=2|prob=0.631 priced)
+      (NP|sentiment=2|prob=0.459
+        (@NP|sentiment=2|prob=0.798 (NN|sentiment=2|prob=0.949 beer)
+          (CC|sentiment=2|prob=0.996 and))
+        (NN|sentiment=2|prob=0.847 wine)))
+    (.|sentiment=2|prob=0.997 .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, priced-2)
+nsubj(priced-2, Good-1)
+dobj(priced-2, beer-3)
+cc(beer-3, and-4)
+dobj(priced-2, wine-5)
+conj:and(beer-3, wine-5)
+punct(priced-2, .-6)
+
+Extracted the following NER entity mentions:
+
+Sentence #4 (6 tokens, sentiment: Positive):
+A great value all around.
+
+Tokens:
+[Text=A CharacterOffsetBegin=89 CharacterOffsetEnd=90 PartOfSpeech=DT Lemma=a NamedEntityTag=O SentimentClass=Neutral]
+[Text=great CharacterOffsetBegin=91 CharacterOffsetEnd=96 PartOfSpeech=JJ Lemma=great NamedEntityTag=O SentimentClass=Very positive]
+[Text=value CharacterOffsetBegin=97 CharacterOffsetEnd=102 PartOfSpeech=NN Lemma=value NamedEntityTag=O SentimentClass=Neutral]
+[Text=all CharacterOffsetBegin=103 CharacterOffsetEnd=106 PartOfSpeech=DT Lemma=all NamedEntityTag=O SentimentClass=Neutral]
+[Text=around CharacterOffsetBegin=107 CharacterOffsetEnd=113 PartOfSpeech=RB Lemma=around NamedEntityTag=O SentimentClass=Neutral]
+[Text=. CharacterOffsetBegin=113 CharacterOffsetEnd=114 PartOfSpeech=. Lemma=. NamedEntityTag=O SentimentClass=Neutral]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT A) (JJ great) (NN value))
+    (VP
+      (ADVP (DT all) (RB around)))
+    (. .)))
+
+
+Sentiment-annotated binary tree:
+(ROOT|sentiment=3|prob=0.730
+  (NP|sentiment=3|prob=0.675 (DT|sentiment=2|prob=0.995 A)
+    (@NP|sentiment=3|prob=0.608 (JJ|sentiment=4|prob=0.908 great) (NN|sentiment=2|prob=0.986 value)))
+  (@S|sentiment=2|prob=0.886
+    (VP|sentiment=2|prob=0.951 (DT|sentiment=2|prob=0.995 all) (RB|sentiment=2|prob=0.997 around))
+    (.|sentiment=2|prob=0.997 .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, around-5)
+det(value-3, A-1)
+amod(value-3, great-2)
+nsubj(around-5, value-3)
+dep(around-5, all-4)
+punct(around-5, .-6)
+
+Extracted the following NER entity mentions:

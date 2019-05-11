@@ -1,0 +1,596 @@
+
+Sentence #1 (11 tokens, sentiment: Positive):
+This restaurant is easily in my top 5 local favorites.
+
+Tokens:
+[Text=This CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=DT Lemma=this NamedEntityTag=O SentimentClass=Neutral]
+[Text=restaurant CharacterOffsetBegin=5 CharacterOffsetEnd=15 PartOfSpeech=NN Lemma=restaurant NamedEntityTag=O SentimentClass=Neutral]
+[Text=is CharacterOffsetBegin=16 CharacterOffsetEnd=18 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O SentimentClass=Neutral]
+[Text=easily CharacterOffsetBegin=19 CharacterOffsetEnd=25 PartOfSpeech=RB Lemma=easily NamedEntityTag=O SentimentClass=Positive]
+[Text=in CharacterOffsetBegin=26 CharacterOffsetEnd=28 PartOfSpeech=IN Lemma=in NamedEntityTag=O SentimentClass=Neutral]
+[Text=my CharacterOffsetBegin=29 CharacterOffsetEnd=31 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O SentimentClass=Neutral]
+[Text=top CharacterOffsetBegin=32 CharacterOffsetEnd=35 PartOfSpeech=JJ Lemma=top NamedEntityTag=O SentimentClass=Neutral]
+[Text=5 CharacterOffsetBegin=36 CharacterOffsetEnd=37 PartOfSpeech=CD Lemma=5 NamedEntityTag=NUMBER NormalizedNamedEntityTag=5.0 SentimentClass=Neutral]
+[Text=local CharacterOffsetBegin=38 CharacterOffsetEnd=43 PartOfSpeech=JJ Lemma=local NamedEntityTag=O SentimentClass=Positive]
+[Text=favorites CharacterOffsetBegin=44 CharacterOffsetEnd=53 PartOfSpeech=NNS Lemma=favorite NamedEntityTag=O SentimentClass=Neutral]
+[Text=. CharacterOffsetBegin=53 CharacterOffsetEnd=54 PartOfSpeech=. Lemma=. NamedEntityTag=O SentimentClass=Neutral]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT This) (NN restaurant))
+    (VP (VBZ is)
+      (ADVP (RB easily))
+      (PP (IN in)
+        (NP (PRP$ my) (JJ top) (CD 5) (JJ local) (NNS favorites))))
+    (. .)))
+
+
+Sentiment-annotated binary tree:
+(ROOT|sentiment=3|prob=0.626
+  (NP|sentiment=2|prob=0.797 (DT|sentiment=2|prob=0.998 This) (NN|sentiment=2|prob=0.631 restaurant))
+  (@S|sentiment=3|prob=0.721
+    (VP|sentiment=3|prob=0.788
+      (@VP|sentiment=2|prob=0.622 (VBZ|sentiment=2|prob=0.989 is) (ADVP|sentiment=3|prob=0.948 easily))
+      (PP|sentiment=3|prob=0.738 (IN|sentiment=2|prob=0.993 in)
+        (NP|sentiment=3|prob=0.787 (PRP$|sentiment=2|prob=0.998 my)
+          (@NP|sentiment=3|prob=0.722 (JJ|sentiment=2|prob=0.972 top)
+            (@NP|sentiment=2|prob=0.510 (CD|sentiment=2|prob=0.972 5)
+              (@NP|sentiment=3|prob=0.603 (JJ|sentiment=3|prob=0.780 local) (NNS|sentiment=2|prob=0.711 favorites)))))))
+    (.|sentiment=2|prob=0.997 .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, favorites-10)
+det(restaurant-2, This-1)
+nsubj(favorites-10, restaurant-2)
+cop(favorites-10, is-3)
+advmod(favorites-10, easily-4)
+case(favorites-10, in-5)
+nmod:poss(favorites-10, my-6)
+amod(favorites-10, top-7)
+nummod(favorites-10, 5-8)
+amod(favorites-10, local-9)
+punct(favorites-10, .-11)
+
+Extracted the following NER entity mentions:
+5	NUMBER
+
+Sentence #2 (21 tokens, sentiment: Positive):
+The restaurant has a warm feeling to it and great for catching up with a group of friends or family.
+
+Tokens:
+[Text=The CharacterOffsetBegin=56 CharacterOffsetEnd=59 PartOfSpeech=DT Lemma=the NamedEntityTag=O SentimentClass=Neutral]
+[Text=restaurant CharacterOffsetBegin=60 CharacterOffsetEnd=70 PartOfSpeech=NN Lemma=restaurant NamedEntityTag=O SentimentClass=Neutral]
+[Text=has CharacterOffsetBegin=71 CharacterOffsetEnd=74 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O SentimentClass=Neutral]
+[Text=a CharacterOffsetBegin=75 CharacterOffsetEnd=76 PartOfSpeech=DT Lemma=a NamedEntityTag=O SentimentClass=Neutral]
+[Text=warm CharacterOffsetBegin=77 CharacterOffsetEnd=81 PartOfSpeech=JJ Lemma=warm NamedEntityTag=O SentimentClass=Positive]
+[Text=feeling CharacterOffsetBegin=82 CharacterOffsetEnd=89 PartOfSpeech=NN Lemma=feeling NamedEntityTag=O SentimentClass=Neutral]
+[Text=to CharacterOffsetBegin=90 CharacterOffsetEnd=92 PartOfSpeech=TO Lemma=to NamedEntityTag=O SentimentClass=Neutral]
+[Text=it CharacterOffsetBegin=93 CharacterOffsetEnd=95 PartOfSpeech=PRP Lemma=it NamedEntityTag=O SentimentClass=Neutral]
+[Text=and CharacterOffsetBegin=96 CharacterOffsetEnd=99 PartOfSpeech=CC Lemma=and NamedEntityTag=O SentimentClass=Neutral]
+[Text=great CharacterOffsetBegin=100 CharacterOffsetEnd=105 PartOfSpeech=JJ Lemma=great NamedEntityTag=O SentimentClass=Very positive]
+[Text=for CharacterOffsetBegin=106 CharacterOffsetEnd=109 PartOfSpeech=IN Lemma=for NamedEntityTag=O SentimentClass=Neutral]
+[Text=catching CharacterOffsetBegin=110 CharacterOffsetEnd=118 PartOfSpeech=VBG Lemma=catch NamedEntityTag=O SentimentClass=Neutral]
+[Text=up CharacterOffsetBegin=119 CharacterOffsetEnd=121 PartOfSpeech=RP Lemma=up NamedEntityTag=O SentimentClass=Neutral]
+[Text=with CharacterOffsetBegin=122 CharacterOffsetEnd=126 PartOfSpeech=IN Lemma=with NamedEntityTag=O SentimentClass=Neutral]
+[Text=a CharacterOffsetBegin=127 CharacterOffsetEnd=128 PartOfSpeech=DT Lemma=a NamedEntityTag=O SentimentClass=Neutral]
+[Text=group CharacterOffsetBegin=129 CharacterOffsetEnd=134 PartOfSpeech=NN Lemma=group NamedEntityTag=O SentimentClass=Neutral]
+[Text=of CharacterOffsetBegin=135 CharacterOffsetEnd=137 PartOfSpeech=IN Lemma=of NamedEntityTag=O SentimentClass=Neutral]
+[Text=friends CharacterOffsetBegin=138 CharacterOffsetEnd=145 PartOfSpeech=NNS Lemma=friend NamedEntityTag=O SentimentClass=Positive]
+[Text=or CharacterOffsetBegin=146 CharacterOffsetEnd=148 PartOfSpeech=CC Lemma=or NamedEntityTag=O SentimentClass=Neutral]
+[Text=family CharacterOffsetBegin=149 CharacterOffsetEnd=155 PartOfSpeech=NN Lemma=family NamedEntityTag=O SentimentClass=Positive]
+[Text=. CharacterOffsetBegin=155 CharacterOffsetEnd=156 PartOfSpeech=. Lemma=. NamedEntityTag=O SentimentClass=Neutral]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (NN restaurant))
+    (VP (VBZ has)
+      (NP
+        (NP
+          (NP (DT a) (JJ warm) (NN feeling))
+          (PP (TO to)
+            (NP (PRP it))))
+        (CC and)
+        (NP
+          (NP (JJ great))
+          (PP (IN for)
+            (S
+              (VP (VBG catching)
+                (PRT (RP up))
+                (PP (IN with)
+                  (NP
+                    (NP (DT a) (NN group))
+                    (PP (IN of)
+                      (NP (NNS friends)
+                        (CC or)
+                        (NN family)))))))))))
+    (. .)))
+
+
+Sentiment-annotated binary tree:
+(ROOT|sentiment=3|prob=0.467
+  (NP|sentiment=2|prob=0.849 (DT|sentiment=2|prob=0.993 The) (NN|sentiment=2|prob=0.631 restaurant))
+  (@S|sentiment=3|prob=0.607
+    (VP|sentiment=3|prob=0.551 (VBZ|sentiment=2|prob=0.994 has)
+      (NP|sentiment=3|prob=0.481
+        (@NP|sentiment=3|prob=0.850
+          (NP|sentiment=3|prob=0.838
+            (NP|sentiment=3|prob=0.843 (DT|sentiment=2|prob=0.990 a)
+              (@NP|sentiment=3|prob=0.845 (JJ|sentiment=3|prob=0.939 warm) (NN|sentiment=2|prob=0.994 feeling)))
+            (PP|sentiment=2|prob=0.933 (TO|sentiment=2|prob=0.990 to) (NP|sentiment=2|prob=0.993 it)))
+          (CC|sentiment=2|prob=0.996 and))
+        (NP|sentiment=3|prob=0.609 (NP|sentiment=4|prob=0.908 great)
+          (PP|sentiment=2|prob=0.593 (IN|sentiment=2|prob=0.992 for)
+            (S|sentiment=2|prob=0.471
+              (@VP|sentiment=2|prob=0.864 (VBG|sentiment=2|prob=0.951 catching) (PRT|sentiment=2|prob=0.997 up))
+              (PP|sentiment=2|prob=0.573 (IN|sentiment=2|prob=0.992 with)
+                (NP|sentiment=2|prob=0.595
+                  (NP|sentiment=2|prob=0.982 (DT|sentiment=2|prob=0.990 a) (NN|sentiment=2|prob=0.994 group))
+                  (PP|sentiment=2|prob=0.843 (IN|sentiment=2|prob=0.993 of)
+                    (NP|sentiment=2|prob=0.824
+                      (@NP|sentiment=2|prob=0.583 (NNS|sentiment=3|prob=0.756 friends)
+                        (CC|sentiment=2|prob=0.991 or))
+                      (NN|sentiment=3|prob=0.987 family))))))))))
+    (.|sentiment=2|prob=0.997 .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, has-3)
+det(restaurant-2, The-1)
+nsubj(has-3, restaurant-2)
+det(feeling-6, a-4)
+amod(feeling-6, warm-5)
+dobj(has-3, feeling-6)
+case(it-8, to-7)
+nmod:to(feeling-6, it-8)
+cc(feeling-6, and-9)
+dobj(has-3, great-10)
+conj:and(feeling-6, great-10)
+mark(catching-12, for-11)
+acl:for(great-10, catching-12)
+compound:prt(catching-12, up-13)
+case(group-16, with-14)
+det(group-16, a-15)
+nmod:with(catching-12, group-16)
+case(friends-18, of-17)
+nmod:of(group-16, friends-18)
+cc(friends-18, or-19)
+nmod:of(group-16, family-20)
+conj:or(friends-18, family-20)
+punct(has-3, .-21)
+
+Extracted the following NER entity mentions:
+
+Sentence #3 (19 tokens, sentiment: Negative):
+They offer $10 bottles of wine which is probably the cheapest wine deal you will ever find!
+
+Tokens:
+[Text=They CharacterOffsetBegin=158 CharacterOffsetEnd=162 PartOfSpeech=PRP Lemma=they NamedEntityTag=O SentimentClass=Neutral]
+[Text=offer CharacterOffsetBegin=163 CharacterOffsetEnd=168 PartOfSpeech=VBP Lemma=offer NamedEntityTag=O SentimentClass=Neutral]
+[Text=$ CharacterOffsetBegin=169 CharacterOffsetEnd=170 PartOfSpeech=$ Lemma=$ NamedEntityTag=MONEY NormalizedNamedEntityTag=$10.0 SentimentClass=Neutral]
+[Text=10 CharacterOffsetBegin=170 CharacterOffsetEnd=172 PartOfSpeech=CD Lemma=10 NamedEntityTag=MONEY NormalizedNamedEntityTag=$10.0 SentimentClass=Positive]
+[Text=bottles CharacterOffsetBegin=173 CharacterOffsetEnd=180 PartOfSpeech=NNS Lemma=bottle NamedEntityTag=O SentimentClass=Neutral]
+[Text=of CharacterOffsetBegin=181 CharacterOffsetEnd=183 PartOfSpeech=IN Lemma=of NamedEntityTag=O SentimentClass=Neutral]
+[Text=wine CharacterOffsetBegin=184 CharacterOffsetEnd=188 PartOfSpeech=NN Lemma=wine NamedEntityTag=O SentimentClass=Neutral]
+[Text=which CharacterOffsetBegin=189 CharacterOffsetEnd=194 PartOfSpeech=WDT Lemma=which NamedEntityTag=O SentimentClass=Neutral]
+[Text=is CharacterOffsetBegin=195 CharacterOffsetEnd=197 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O SentimentClass=Neutral]
+[Text=probably CharacterOffsetBegin=198 CharacterOffsetEnd=206 PartOfSpeech=RB Lemma=probably NamedEntityTag=O SentimentClass=Neutral]
+[Text=the CharacterOffsetBegin=207 CharacterOffsetEnd=210 PartOfSpeech=DT Lemma=the NamedEntityTag=O SentimentClass=Neutral]
+[Text=cheapest CharacterOffsetBegin=211 CharacterOffsetEnd=219 PartOfSpeech=JJS Lemma=cheapest NamedEntityTag=O SentimentClass=Neutral]
+[Text=wine CharacterOffsetBegin=220 CharacterOffsetEnd=224 PartOfSpeech=NN Lemma=wine NamedEntityTag=O SentimentClass=Neutral]
+[Text=deal CharacterOffsetBegin=225 CharacterOffsetEnd=229 PartOfSpeech=NN Lemma=deal NamedEntityTag=O SentimentClass=Neutral]
+[Text=you CharacterOffsetBegin=230 CharacterOffsetEnd=233 PartOfSpeech=PRP Lemma=you NamedEntityTag=O SentimentClass=Neutral]
+[Text=will CharacterOffsetBegin=234 CharacterOffsetEnd=238 PartOfSpeech=MD Lemma=will NamedEntityTag=O SentimentClass=Neutral]
+[Text=ever CharacterOffsetBegin=239 CharacterOffsetEnd=243 PartOfSpeech=RB Lemma=ever NamedEntityTag=O SentimentClass=Neutral]
+[Text=find CharacterOffsetBegin=244 CharacterOffsetEnd=248 PartOfSpeech=VB Lemma=find NamedEntityTag=O SentimentClass=Neutral]
+[Text=! CharacterOffsetBegin=248 CharacterOffsetEnd=249 PartOfSpeech=. Lemma=! NamedEntityTag=O SentimentClass=Neutral]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBP offer)
+      (NP
+        (NP
+          (ADJP ($ $) (CD 10))
+          (NNS bottles))
+        (PP (IN of)
+          (NP (NN wine)))
+        (SBAR
+          (WHNP (WDT which))
+          (S
+            (VP (VBZ is)
+              (ADVP (RB probably))
+              (NP
+                (NP (DT the) (JJS cheapest) (NN wine) (NN deal))
+                (SBAR
+                  (S
+                    (NP (PRP you))
+                    (VP (MD will)
+                      (ADVP (RB ever))
+                      (VP (VB find)))))))))))
+    (. !)))
+
+
+Sentiment-annotated binary tree:
+(ROOT|sentiment=1|prob=0.508 (NP|sentiment=2|prob=0.993 They)
+  (@S|sentiment=1|prob=0.497
+    (VP|sentiment=1|prob=0.599 (VBP|sentiment=2|prob=0.991 offer)
+      (NP|sentiment=1|prob=0.657
+        (@NP|sentiment=2|prob=0.555
+          (NP|sentiment=2|prob=0.753
+            (ADJP|sentiment=2|prob=0.921 ($|sentiment=2|prob=0.991 $) (CD|sentiment=3|prob=0.914 10))
+            (NNS|sentiment=2|prob=0.788 bottles))
+          (PP|sentiment=2|prob=0.680 (IN|sentiment=2|prob=0.993 of) (NP|sentiment=2|prob=0.847 wine)))
+        (SBAR|sentiment=1|prob=0.484 (WHNP|sentiment=2|prob=0.991 which)
+          (S|sentiment=1|prob=0.432
+            (@VP|sentiment=2|prob=0.481 (VBZ|sentiment=2|prob=0.989 is) (ADVP|sentiment=2|prob=0.994 probably))
+            (NP|sentiment=2|prob=0.590
+              (NP|sentiment=2|prob=0.688 (DT|sentiment=2|prob=0.994 the)
+                (@NP|sentiment=2|prob=0.529 (JJS|sentiment=2|prob=0.631 cheapest)
+                  (@NP|sentiment=2|prob=0.808 (NN|sentiment=2|prob=0.847 wine) (NN|sentiment=2|prob=0.985 deal))))
+              (SBAR|sentiment=2|prob=0.871 (NP|sentiment=2|prob=0.995 you)
+                (VP|sentiment=2|prob=0.937
+                  (@VP|sentiment=2|prob=0.963 (MD|sentiment=2|prob=0.995 will) (ADVP|sentiment=2|prob=1.000 ever))
+                  (VP|sentiment=2|prob=0.995 find))))))))
+    (.|sentiment=2|prob=0.999 !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, offer-2)
+nsubj(offer-2, They-1)
+amod(bottles-5, $-3)
+compound($-3, 10-4)
+dobj(offer-2, bottles-5)
+nsubj(deal-14, bottles-5)
+case(wine-7, of-6)
+nmod:of(bottles-5, wine-7)
+ref(bottles-5, which-8)
+cop(deal-14, is-9)
+advmod(deal-14, probably-10)
+det(deal-14, the-11)
+amod(deal-14, cheapest-12)
+compound(deal-14, wine-13)
+acl:relcl(bottles-5, deal-14)
+nsubj(find-18, you-15)
+aux(find-18, will-16)
+advmod(find-18, ever-17)
+acl:relcl(deal-14, find-18)
+punct(offer-2, !-19)
+
+Extracted the following NER entity mentions:
+$10	MONEY
+
+Sentence #4 (8 tokens, sentiment: Positive):
+The portions are generous for the price.
+
+Tokens:
+[Text=The CharacterOffsetBegin=251 CharacterOffsetEnd=254 PartOfSpeech=DT Lemma=the NamedEntityTag=O SentimentClass=Neutral]
+[Text=portions CharacterOffsetBegin=255 CharacterOffsetEnd=263 PartOfSpeech=NNS Lemma=portion NamedEntityTag=O SentimentClass=Neutral]
+[Text=are CharacterOffsetBegin=264 CharacterOffsetEnd=267 PartOfSpeech=VBP Lemma=be NamedEntityTag=O SentimentClass=Neutral]
+[Text=generous CharacterOffsetBegin=268 CharacterOffsetEnd=276 PartOfSpeech=JJ Lemma=generous NamedEntityTag=O SentimentClass=Positive]
+[Text=for CharacterOffsetBegin=277 CharacterOffsetEnd=280 PartOfSpeech=IN Lemma=for NamedEntityTag=O SentimentClass=Neutral]
+[Text=the CharacterOffsetBegin=281 CharacterOffsetEnd=284 PartOfSpeech=DT Lemma=the NamedEntityTag=O SentimentClass=Neutral]
+[Text=price CharacterOffsetBegin=285 CharacterOffsetEnd=290 PartOfSpeech=NN Lemma=price NamedEntityTag=O SentimentClass=Neutral]
+[Text=. CharacterOffsetBegin=290 CharacterOffsetEnd=291 PartOfSpeech=. Lemma=. NamedEntityTag=O SentimentClass=Neutral]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (DT The) (NNS portions))
+    (VP (VBP are)
+      (ADJP (JJ generous)
+        (PP (IN for)
+          (NP (DT the) (NN price)))))
+    (. .)))
+
+
+Sentiment-annotated binary tree:
+(ROOT|sentiment=3|prob=0.514
+  (NP|sentiment=2|prob=0.898 (DT|sentiment=2|prob=0.993 The) (NNS|sentiment=2|prob=0.943 portions))
+  (@S|sentiment=3|prob=0.801
+    (VP|sentiment=3|prob=0.724 (VBP|sentiment=2|prob=0.992 are)
+      (ADJP|sentiment=3|prob=0.748 (JJ|sentiment=3|prob=0.809 generous)
+        (PP|sentiment=2|prob=0.726 (IN|sentiment=2|prob=0.992 for)
+          (NP|sentiment=3|prob=0.813 (DT|sentiment=2|prob=0.994 the) (NN|sentiment=2|prob=0.984 price)))))
+    (.|sentiment=2|prob=0.997 .)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, generous-4)
+det(portions-2, The-1)
+nsubj(generous-4, portions-2)
+cop(generous-4, are-3)
+case(price-7, for-5)
+det(price-7, the-6)
+nmod:for(generous-4, price-7)
+punct(generous-4, .-8)
+
+Extracted the following NER entity mentions:
+
+Sentence #5 (20 tokens, sentiment: Negative):
+I highly recommend the UG Fish Taco, UG Burger, or the Turkey Devonshire in no particular order.
+
+Tokens:
+[Text=I CharacterOffsetBegin=292 CharacterOffsetEnd=293 PartOfSpeech=PRP Lemma=I NamedEntityTag=O SentimentClass=Neutral]
+[Text=highly CharacterOffsetBegin=294 CharacterOffsetEnd=300 PartOfSpeech=RB Lemma=highly NamedEntityTag=O SentimentClass=Neutral]
+[Text=recommend CharacterOffsetBegin=301 CharacterOffsetEnd=310 PartOfSpeech=VB Lemma=recommend NamedEntityTag=O SentimentClass=Positive]
+[Text=the CharacterOffsetBegin=311 CharacterOffsetEnd=314 PartOfSpeech=DT Lemma=the NamedEntityTag=O SentimentClass=Neutral]
+[Text=UG CharacterOffsetBegin=315 CharacterOffsetEnd=317 PartOfSpeech=NNP Lemma=UG NamedEntityTag=MISC SentimentClass=Neutral]
+[Text=Fish CharacterOffsetBegin=318 CharacterOffsetEnd=322 PartOfSpeech=NN Lemma=fish NamedEntityTag=MISC SentimentClass=Neutral]
+[Text=Taco CharacterOffsetBegin=323 CharacterOffsetEnd=327 PartOfSpeech=NNP Lemma=Taco NamedEntityTag=MISC SentimentClass=Neutral]
+[Text=, CharacterOffsetBegin=327 CharacterOffsetEnd=328 PartOfSpeech=, Lemma=, NamedEntityTag=O SentimentClass=Neutral]
+[Text=UG CharacterOffsetBegin=329 CharacterOffsetEnd=331 PartOfSpeech=NNP Lemma=UG NamedEntityTag=LOCATION SentimentClass=Neutral]
+[Text=Burger CharacterOffsetBegin=332 CharacterOffsetEnd=338 PartOfSpeech=NNP Lemma=Burger NamedEntityTag=LOCATION SentimentClass=Neutral]
+[Text=, CharacterOffsetBegin=338 CharacterOffsetEnd=339 PartOfSpeech=, Lemma=, NamedEntityTag=O SentimentClass=Neutral]
+[Text=or CharacterOffsetBegin=340 CharacterOffsetEnd=342 PartOfSpeech=CC Lemma=or NamedEntityTag=O SentimentClass=Neutral]
+[Text=the CharacterOffsetBegin=343 CharacterOffsetEnd=346 PartOfSpeech=DT Lemma=the NamedEntityTag=O SentimentClass=Neutral]
+[Text=Turkey CharacterOffsetBegin=347 CharacterOffsetEnd=353 PartOfSpeech=NNP Lemma=Turkey NamedEntityTag=COUNTRY SentimentClass=Neutral]
+[Text=Devonshire CharacterOffsetBegin=354 CharacterOffsetEnd=364 PartOfSpeech=NNP Lemma=Devonshire NamedEntityTag=LOCATION SentimentClass=Neutral]
+[Text=in CharacterOffsetBegin=365 CharacterOffsetEnd=367 PartOfSpeech=IN Lemma=in NamedEntityTag=O SentimentClass=Neutral]
+[Text=no CharacterOffsetBegin=368 CharacterOffsetEnd=370 PartOfSpeech=DT Lemma=no NamedEntityTag=O SentimentClass=Negative]
+[Text=particular CharacterOffsetBegin=371 CharacterOffsetEnd=381 PartOfSpeech=JJ Lemma=particular NamedEntityTag=O SentimentClass=Neutral]
+[Text=order CharacterOffsetBegin=382 CharacterOffsetEnd=387 PartOfSpeech=NN Lemma=order NamedEntityTag=O SentimentClass=Neutral]
+[Text=. CharacterOffsetBegin=387 CharacterOffsetEnd=388 PartOfSpeech=. Lemma=. NamedEntityTag=O SentimentClass=Neutral]
+
+Constituency parse: 
+(ROOT
+  (S
+    (NP (PRP I))
+    (ADVP (RB highly))
+    (VP (VB recommend)
+      (NP
+        (NP (DT the) (NNP UG) (NN Fish) (NNP Taco))
+        (, ,)
+        (NP (NNP UG) (NNP Burger))
+        (, ,)
+        (CC or)
+        (NP
+          (NP (DT the) (NNP Turkey) (NNP Devonshire))
+          (PP (IN in)
+            (NP (DT no) (JJ particular) (NN order))))))
+    (. .)))
+
+
+Sentiment-annotated binary tree:
+(ROOT|sentiment=1|prob=0.583 (NP|sentiment=2|prob=0.996 I)
+  (@S|sentiment=1|prob=0.498 (ADVP|sentiment=2|prob=0.980 highly)
+    (@S|sentiment=1|prob=0.550
+      (VP|sentiment=1|prob=0.511 (VB|sentiment=3|prob=0.822 recommend)
+        (NP|sentiment=1|prob=0.580
+          (@NP|sentiment=2|prob=0.484
+            (@NP|sentiment=2|prob=0.492
+              (@NP|sentiment=2|prob=0.575
+                (@NP|sentiment=2|prob=0.577
+                  (NP|sentiment=2|prob=0.624 (DT|sentiment=2|prob=0.994 the)
+                    (@NP|sentiment=2|prob=0.519 (NNP|sentiment=2|prob=0.631 UG)
+                      (@NP|sentiment=2|prob=0.607 (NN|sentiment=2|prob=0.632 Fish) (NNP|sentiment=2|prob=0.631 Taco))))
+                  (,|sentiment=2|prob=0.997 ,))
+                (NP|sentiment=2|prob=0.930 (NNP|sentiment=2|prob=0.631 UG) (NNP|sentiment=2|prob=0.993 Burger)))
+              (,|sentiment=2|prob=0.997 ,))
+            (CC|sentiment=2|prob=0.991 or))
+          (NP|sentiment=2|prob=0.528
+            (NP|sentiment=2|prob=0.873 (DT|sentiment=2|prob=0.994 the)
+              (@NP|sentiment=2|prob=0.734 (NNP|sentiment=2|prob=0.545 Turkey) (NNP|sentiment=2|prob=0.631 Devonshire)))
+            (PP|sentiment=2|prob=0.549 (IN|sentiment=2|prob=0.993 in)
+              (NP|sentiment=2|prob=0.718 (DT|sentiment=1|prob=0.968 no)
+                (@NP|sentiment=2|prob=0.995 (JJ|sentiment=2|prob=0.998 particular) (NN|sentiment=2|prob=0.989 order)))))))
+      (.|sentiment=2|prob=0.997 .))))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, recommend-3)
+nsubj(recommend-3, I-1)
+advmod(recommend-3, highly-2)
+det(Taco-7, the-4)
+compound(Taco-7, UG-5)
+compound(Taco-7, Fish-6)
+dobj(recommend-3, Taco-7)
+punct(Taco-7, ,-8)
+compound(Burger-10, UG-9)
+dobj(recommend-3, Burger-10)
+conj:or(Taco-7, Burger-10)
+punct(Taco-7, ,-11)
+cc(Taco-7, or-12)
+det(Devonshire-15, the-13)
+compound(Devonshire-15, Turkey-14)
+dobj(recommend-3, Devonshire-15)
+conj:or(Taco-7, Devonshire-15)
+case(order-19, in-16)
+neg(order-19, no-17)
+amod(order-19, particular-18)
+nmod:in(Devonshire-15, order-19)
+punct(recommend-3, .-20)
+
+Extracted the following NER entity mentions:
+UG Fish Taco	MISC
+UG Burger	LOCATION
+Turkey	COUNTRY
+Devonshire	LOCATION
+
+Sentence #6 (23 tokens, sentiment: Negative):
+If you are hungry and can't wait for the main course try the nachos or a crock of French onion soup!
+
+Tokens:
+[Text=If CharacterOffsetBegin=390 CharacterOffsetEnd=392 PartOfSpeech=IN Lemma=if NamedEntityTag=O SentimentClass=Neutral]
+[Text=you CharacterOffsetBegin=393 CharacterOffsetEnd=396 PartOfSpeech=PRP Lemma=you NamedEntityTag=O SentimentClass=Neutral]
+[Text=are CharacterOffsetBegin=397 CharacterOffsetEnd=400 PartOfSpeech=VBP Lemma=be NamedEntityTag=O SentimentClass=Neutral]
+[Text=hungry CharacterOffsetBegin=401 CharacterOffsetEnd=407 PartOfSpeech=JJ Lemma=hungry NamedEntityTag=O SentimentClass=Neutral]
+[Text=and CharacterOffsetBegin=408 CharacterOffsetEnd=411 PartOfSpeech=CC Lemma=and NamedEntityTag=O SentimentClass=Neutral]
+[Text=ca CharacterOffsetBegin=412 CharacterOffsetEnd=414 PartOfSpeech=MD Lemma=can NamedEntityTag=O SentimentClass=Neutral]
+[Text=n't CharacterOffsetBegin=414 CharacterOffsetEnd=417 PartOfSpeech=RB Lemma=not NamedEntityTag=O SentimentClass=Neutral]
+[Text=wait CharacterOffsetBegin=418 CharacterOffsetEnd=422 PartOfSpeech=VB Lemma=wait NamedEntityTag=O SentimentClass=Neutral]
+[Text=for CharacterOffsetBegin=423 CharacterOffsetEnd=426 PartOfSpeech=IN Lemma=for NamedEntityTag=O SentimentClass=Neutral]
+[Text=the CharacterOffsetBegin=427 CharacterOffsetEnd=430 PartOfSpeech=DT Lemma=the NamedEntityTag=O SentimentClass=Neutral]
+[Text=main CharacterOffsetBegin=431 CharacterOffsetEnd=435 PartOfSpeech=JJ Lemma=main NamedEntityTag=O SentimentClass=Neutral]
+[Text=course CharacterOffsetBegin=436 CharacterOffsetEnd=442 PartOfSpeech=NN Lemma=course NamedEntityTag=O SentimentClass=Neutral]
+[Text=try CharacterOffsetBegin=443 CharacterOffsetEnd=446 PartOfSpeech=VBP Lemma=try NamedEntityTag=O SentimentClass=Neutral]
+[Text=the CharacterOffsetBegin=447 CharacterOffsetEnd=450 PartOfSpeech=DT Lemma=the NamedEntityTag=O SentimentClass=Neutral]
+[Text=nachos CharacterOffsetBegin=451 CharacterOffsetEnd=457 PartOfSpeech=NNS Lemma=nacho NamedEntityTag=O SentimentClass=Neutral]
+[Text=or CharacterOffsetBegin=458 CharacterOffsetEnd=460 PartOfSpeech=CC Lemma=or NamedEntityTag=O SentimentClass=Neutral]
+[Text=a CharacterOffsetBegin=461 CharacterOffsetEnd=462 PartOfSpeech=DT Lemma=a NamedEntityTag=O SentimentClass=Neutral]
+[Text=crock CharacterOffsetBegin=463 CharacterOffsetEnd=468 PartOfSpeech=NN Lemma=crock NamedEntityTag=O SentimentClass=Neutral]
+[Text=of CharacterOffsetBegin=469 CharacterOffsetEnd=471 PartOfSpeech=IN Lemma=of NamedEntityTag=O SentimentClass=Neutral]
+[Text=French CharacterOffsetBegin=472 CharacterOffsetEnd=478 PartOfSpeech=JJ Lemma=french NamedEntityTag=NATIONALITY SentimentClass=Neutral]
+[Text=onion CharacterOffsetBegin=479 CharacterOffsetEnd=484 PartOfSpeech=NN Lemma=onion NamedEntityTag=O SentimentClass=Neutral]
+[Text=soup CharacterOffsetBegin=485 CharacterOffsetEnd=489 PartOfSpeech=NN Lemma=soup NamedEntityTag=O SentimentClass=Neutral]
+[Text=! CharacterOffsetBegin=489 CharacterOffsetEnd=490 PartOfSpeech=. Lemma=! NamedEntityTag=O SentimentClass=Neutral]
+
+Constituency parse: 
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP
+          (VP (VBP are)
+            (ADJP (JJ hungry)))
+          (CC and)
+          (VP (MD ca) (RB n't)
+            (VP (VB wait)
+              (PP (IN for)
+                (NP (DT the) (JJ main) (NN course))))))))
+    (VP (VBP try)
+      (NP
+        (NP (DT the) (NNS nachos))
+        (CC or)
+        (NP
+          (NP (DT a) (NN crock))
+          (PP (IN of)
+            (NP (JJ French) (NN onion) (NN soup))))))
+    (. !)))
+
+
+Sentiment-annotated binary tree:
+(ROOT|sentiment=1|prob=0.529
+  (SBAR|sentiment=2|prob=0.580 (IN|sentiment=2|prob=0.997 If)
+    (S|sentiment=2|prob=0.441 (NP|sentiment=2|prob=0.995 you)
+      (VP|sentiment=1|prob=0.469
+        (@VP|sentiment=2|prob=0.857
+          (VP|sentiment=2|prob=0.779 (VBP|sentiment=2|prob=0.992 are) (ADJP|sentiment=2|prob=0.946 hungry))
+          (CC|sentiment=2|prob=0.996 and))
+        (VP|sentiment=1|prob=0.457
+          (@VP|sentiment=2|prob=0.987 (MD|sentiment=2|prob=0.998 ca) (RB|sentiment=2|prob=0.994 n't))
+          (VP|sentiment=2|prob=0.491 (VB|sentiment=2|prob=0.967 wait)
+            (PP|sentiment=2|prob=0.941 (IN|sentiment=2|prob=0.992 for)
+              (NP|sentiment=2|prob=0.989 (DT|sentiment=2|prob=0.994 the)
+                (@NP|sentiment=2|prob=0.991 (JJ|sentiment=2|prob=0.997 main) (NN|sentiment=2|prob=0.993 course)))))))))
+  (@S|sentiment=2|prob=0.614
+    (VP|sentiment=2|prob=0.687 (VBP|sentiment=2|prob=0.993 try)
+      (NP|sentiment=2|prob=0.736
+        (@NP|sentiment=2|prob=0.884
+          (NP|sentiment=2|prob=0.846 (DT|sentiment=2|prob=0.994 the) (NNS|sentiment=2|prob=0.631 nachos))
+          (CC|sentiment=2|prob=0.991 or))
+        (NP|sentiment=2|prob=0.657
+          (NP|sentiment=2|prob=0.571 (DT|sentiment=2|prob=0.990 a) (NN|sentiment=2|prob=0.578 crock))
+          (PP|sentiment=2|prob=0.852 (IN|sentiment=2|prob=0.993 of)
+            (NP|sentiment=2|prob=0.786 (JJ|sentiment=2|prob=0.997 French)
+              (@NP|sentiment=2|prob=0.506 (NN|sentiment=2|prob=0.631 onion) (NN|sentiment=2|prob=0.887 soup)))))))
+    (.|sentiment=2|prob=0.999 !)))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, try-13)
+mark(hungry-4, If-1)
+nsubj(hungry-4, you-2)
+nsubj(wait-8, you-2)
+cop(hungry-4, are-3)
+csubj(try-13, hungry-4)
+cc(hungry-4, and-5)
+aux(wait-8, ca-6)
+neg(wait-8, n't-7)
+conj:and(hungry-4, wait-8)
+csubj(try-13, wait-8)
+case(course-12, for-9)
+det(course-12, the-10)
+amod(course-12, main-11)
+nmod:for(wait-8, course-12)
+det(nachos-15, the-14)
+dobj(try-13, nachos-15)
+cc(nachos-15, or-16)
+det(crock-18, a-17)
+dobj(try-13, crock-18)
+conj:or(nachos-15, crock-18)
+case(soup-22, of-19)
+amod(soup-22, French-20)
+compound(soup-22, onion-21)
+nmod:of(crock-18, soup-22)
+punct(try-13, !-23)
+
+Extracted the following NER entity mentions:
+French	NATIONALITY
+
+Sentence #7 (13 tokens, sentiment: Neutral):
+Don't leave the Union Grill without trying the s'mores for dessert!!!
+
+Tokens:
+[Text=Do CharacterOffsetBegin=491 CharacterOffsetEnd=493 PartOfSpeech=VBP Lemma=do NamedEntityTag=O SentimentClass=Neutral]
+[Text=n't CharacterOffsetBegin=493 CharacterOffsetEnd=496 PartOfSpeech=RB Lemma=not NamedEntityTag=O SentimentClass=Neutral]
+[Text=leave CharacterOffsetBegin=497 CharacterOffsetEnd=502 PartOfSpeech=VB Lemma=leave NamedEntityTag=O SentimentClass=Negative]
+[Text=the CharacterOffsetBegin=503 CharacterOffsetEnd=506 PartOfSpeech=DT Lemma=the NamedEntityTag=O SentimentClass=Neutral]
+[Text=Union CharacterOffsetBegin=507 CharacterOffsetEnd=512 PartOfSpeech=NNP Lemma=Union NamedEntityTag=O SentimentClass=Neutral]
+[Text=Grill CharacterOffsetBegin=513 CharacterOffsetEnd=518 PartOfSpeech=NNP Lemma=Grill NamedEntityTag=O SentimentClass=Neutral]
+[Text=without CharacterOffsetBegin=519 CharacterOffsetEnd=526 PartOfSpeech=IN Lemma=without NamedEntityTag=O SentimentClass=Neutral]
+[Text=trying CharacterOffsetBegin=527 CharacterOffsetEnd=533 PartOfSpeech=VBG Lemma=try NamedEntityTag=O SentimentClass=Neutral]
+[Text=the CharacterOffsetBegin=534 CharacterOffsetEnd=537 PartOfSpeech=DT Lemma=the NamedEntityTag=O SentimentClass=Neutral]
+[Text=s'mores CharacterOffsetBegin=538 CharacterOffsetEnd=545 PartOfSpeech=NNS Lemma=s'more NamedEntityTag=O SentimentClass=Neutral]
+[Text=for CharacterOffsetBegin=546 CharacterOffsetEnd=549 PartOfSpeech=IN Lemma=for NamedEntityTag=O SentimentClass=Neutral]
+[Text=dessert CharacterOffsetBegin=550 CharacterOffsetEnd=557 PartOfSpeech=NN Lemma=dessert NamedEntityTag=O SentimentClass=Neutral]
+[Text=!!! CharacterOffsetBegin=557 CharacterOffsetEnd=560 PartOfSpeech=. Lemma=!!! NamedEntityTag=O SentimentClass=Neutral]
+
+Constituency parse: 
+(ROOT
+  (S
+    (VP (VBP Do) (RB n't)
+      (VP (VB leave)
+        (NP (DT the) (NNP Union) (NNP Grill))
+        (PP (IN without)
+          (S
+            (VP (VBG trying)
+              (NP (DT the) (NNS s'mores))
+              (PP (IN for)
+                (NP (NN dessert))))))))
+    (. !!!)))
+
+
+Sentiment-annotated binary tree:
+(ROOT|sentiment=2|prob=0.557
+  (VP|sentiment=2|prob=0.639
+    (@VP|sentiment=1|prob=0.870 (VBP|sentiment=2|prob=0.996 Do) (RB|sentiment=2|prob=0.994 n't))
+    (VP|sentiment=1|prob=0.580
+      (@VP|sentiment=2|prob=0.383 (VB|sentiment=1|prob=0.746 leave)
+        (NP|sentiment=2|prob=0.693 (DT|sentiment=2|prob=0.994 the)
+          (@NP|sentiment=2|prob=0.583 (NNP|sentiment=2|prob=0.631 Union) (NNP|sentiment=2|prob=0.631 Grill))))
+      (PP|sentiment=2|prob=0.549 (IN|sentiment=2|prob=0.973 without)
+        (S|sentiment=2|prob=0.479
+          (@VP|sentiment=2|prob=0.746 (VBG|sentiment=2|prob=0.991 trying)
+            (NP|sentiment=2|prob=0.846 (DT|sentiment=2|prob=0.994 the) (NNS|sentiment=2|prob=0.631 s'mores)))
+          (PP|sentiment=2|prob=0.821 (IN|sentiment=2|prob=0.992 for) (NP|sentiment=2|prob=0.631 dessert))))))
+  (.|sentiment=2|prob=0.631 !!!))
+
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, leave-3)
+aux(leave-3, Do-1)
+neg(leave-3, n't-2)
+det(Grill-6, the-4)
+compound(Grill-6, Union-5)
+dobj(leave-3, Grill-6)
+mark(trying-8, without-7)
+advcl:without(leave-3, trying-8)
+det(s'mores-10, the-9)
+dobj(trying-8, s'mores-10)
+case(dessert-12, for-11)
+nmod:for(trying-8, dessert-12)
+punct(leave-3, !!!-13)
+
+Extracted the following NER entity mentions:
+
+Coreference set:
+	(2,2,[1,3]) -> (1,2,[1,3]), that is: "The restaurant" -> "This restaurant"
+	(2,8,[8,9]) -> (1,2,[1,3]), that is: "it" -> "This restaurant"
+
+Coreference set:
+	(5,1,[1,2]) -> (1,6,[6,7]), that is: "I" -> "my"
