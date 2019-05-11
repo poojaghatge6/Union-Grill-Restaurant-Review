@@ -1,6 +1,7 @@
 # Union-Grill-Resturant-Review
 
 Output:
+```
 query opinion [service, good] has similar opinions: 
 [service, great] appears in review 5	14	
 [service, warm] appears in review 8	
@@ -27,3 +28,4 @@ query opinion [food, delicious] has similar opinions:
 [meal, delicious] appears in review 4	
 [food, interesting] appears in review 14	
 [food, great] appears in review 5	
+```
